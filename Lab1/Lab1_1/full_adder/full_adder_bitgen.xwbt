@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/media/rishabhbt/DADA/CS220Labs/Lab1_1/full_adder/full_adder.ncd
+OUTFILE=/media/rishabhbt/DADA/CS220Labs/Lab1_1/full_adder/full_adder.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=/media/rishabhbt/DADA/CS220Labs/Lab1_1/full_adder
+LICENSE=WebPack
+USER_INFO=211450758_0_0_676

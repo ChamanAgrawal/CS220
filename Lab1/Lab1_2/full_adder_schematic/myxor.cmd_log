@@ -1,0 +1,2 @@
+vhdtdtfi -lib work /media/rishabhbt/DADA/CS220Labs/Lab1_2/full_adder_schematic/myxor.v -lang verilog -prj full_adder_schematic -o myxor.spl -module myxor -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e myxor.spl /media/rishabhbt/DADA/CS220Labs/Lab1_2/full_adder_schematic/myxor.sym 

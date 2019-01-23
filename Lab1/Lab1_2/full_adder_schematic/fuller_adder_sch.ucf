@@ -1,0 +1,21 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "a" LOC = L13;
+NET "b" LOC = L14;
+NET "cin" LOC = H18;
+NET "cout" LOC = F9;
+NET "sum" LOC = F12;
+
+# PlanAhead Generated IO constraints 
+
+NET "a" IOSTANDARD = LVTTL;
+NET "b" IOSTANDARD = LVTTL;
+NET "cin" IOSTANDARD = LVTTL;
+NET "cout" IOSTANDARD = LVTTL;
+NET "sum" IOSTANDARD = LVTTL;
+NET "cout" DRIVE = 8;
+NET "sum" DRIVE = 8;
+NET "a" PULLUP;
+NET "b" PULLUP;
+NET "cin" PULLUP;

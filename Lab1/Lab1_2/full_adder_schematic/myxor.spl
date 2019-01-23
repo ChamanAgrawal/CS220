@@ -1,0 +1,9 @@
+[Inputs]
+x
+y
+[Outputs]
+z
+[BiDir]
+[ATTRIBUTES]
+VeriModel myxor
+

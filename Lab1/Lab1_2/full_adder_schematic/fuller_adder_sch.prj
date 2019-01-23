@@ -1,0 +1,2 @@
+verilog work "myxor.v"
+verilog work "fuller_adder_sch.vf"

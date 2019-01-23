@@ -1,0 +1,5 @@
+MODULE fuller_adder_sch
+	SUBMODULE myxor
+		INSTANCE XLXI_2
+	SUBMODULE myxor
+		INSTANCE XLXI_3

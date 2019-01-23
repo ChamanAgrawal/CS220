@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "/media/rishabhbt/DADA/CS220Labs/Lab1_2/full_adder_schematic/fuller_adder_sch.xst" -ofn "/media/rishabhbt/DADA/CS220Labs/Lab1_2/full_adder_schematic/fuller_adder_sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc fuller_adder_sch.ucf -p xc3s500e-fg320-4 fuller_adder_sch.ngc fuller_adder_sch.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o fuller_adder_sch_map.ncd fuller_adder_sch.ngd fuller_adder_sch.pcf 
+par -w -intstyle ise -ol high -t 1 fuller_adder_sch_map.ncd fuller_adder_sch.ncd fuller_adder_sch.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml fuller_adder_sch.twx fuller_adder_sch.ncd -o fuller_adder_sch.twr fuller_adder_sch.pcf -ucf fuller_adder_sch.ucf 
+bitgen -intstyle ise -f fuller_adder_sch.ut fuller_adder_sch.ncd 

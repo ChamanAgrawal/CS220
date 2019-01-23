@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "/media/rishabhbt/DADA/CS220Labs/Lab1_1/full_adder/full_adder.xst" -ofn "/media/rishabhbt/DADA/CS220Labs/Lab1_1/full_adder/full_adder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc full_adder.ucf -p xc3s500e-fg320-4 full_adder.ngc full_adder.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o full_adder_map.ncd full_adder.ngd full_adder.pcf 
+par -w -intstyle ise -ol high -t 1 full_adder_map.ncd full_adder.ncd full_adder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml full_adder.twx full_adder.ncd -o full_adder.twr full_adder.pcf -ucf full_adder.ucf 
+bitgen -intstyle ise -f full_adder.ut full_adder.ncd 

@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=/media/rishabhbt/DADA/CS220Labs/Lab1_1/full_adder/impact.xsl
+OUTFILE=/media/rishabhbt/DADA/CS220Labs/Lab1_1/full_adder/impact.xsl
+FAMILY=Multiple
+PART=Multiple
+WORKINGDIR=/media/rishabhbt/DADA/CS220Labs/Lab1_1/full_adder
+LICENSE=iMPACT
+USER_INFO=iMPACT

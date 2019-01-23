@@ -1,0 +1,26 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o /media/rishabhbt/DADA/CS220Labs/Lab1_2/full_adder_schematic/fuller_adder_sch_fuller_adder_sch_sch_tb_isim_beh.exe -prj /media/rishabhbt/DADA/CS220Labs/Lab1_2/full_adder_schematic/fuller_adder_sch_fuller_adder_sch_sch_tb_beh.prj work.fuller_adder_sch_fuller_adder_sch_sch_tb work.glbl 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "/media/rishabhbt/DADA/CS220Labs/Lab1_2/full_adder_schematic/myxor.v" into library work
+Analyzing Verilog file "/media/rishabhbt/DADA/CS220Labs/Lab1_2/full_adder_schematic/fuller_adder_sch.vf" into library work
+Analyzing Verilog file "/media/rishabhbt/DADA/CS220Labs/Lab1_2/full_adder_schematic/full_adder_top.v" into library work
+Analyzing Verilog file "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 94624 KB
+Fuse CPU Usage: 1030 ms
+Compiling module myxor
+Compiling module AND2
+Compiling module OR3
+Compiling module fuller_adder_sch
+Compiling module fuller_adder_sch_fuller_adder_sc...
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 6 Verilog Units
+Built simulation executable /media/rishabhbt/DADA/CS220Labs/Lab1_2/full_adder_schematic/fuller_adder_sch_fuller_adder_sch_sch_tb_isim_beh.exe
+Fuse Memory Usage: 1179112 KB
+Fuse CPU Usage: 1060 ms
+GCC CPU Usage: 490 ms

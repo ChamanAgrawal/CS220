@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "/media/rishabhbt/DADA/CS220Labs/Lab1_1/full_adder/full_adder_top_isim_beh.exe" -prj "/media/rishabhbt/DADA/CS220Labs/Lab1_1/full_adder/full_adder_top_beh.prj" "work.full_adder_top" "work.glbl" 

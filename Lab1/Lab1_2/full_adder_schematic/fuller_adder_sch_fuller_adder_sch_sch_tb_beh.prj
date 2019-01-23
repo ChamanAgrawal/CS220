@@ -1,0 +1,4 @@
+verilog work "myxor.v"
+verilog work "fuller_adder_sch.vf"
+verilog work "full_adder_top.v"
+verilog work "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

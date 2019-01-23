@@ -1,0 +1,39 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+# Start of session at: Mon Jan 14 15:49:58 2019
+# Process ID: 3409
+# Log file: /media/rishabhbt/DADA/CS220Labs/Lab1_2/full_adder_schematic/planAhead_run_1/planAhead.log
+# Journal file: /media/rishabhbt/DADA/CS220Labs/Lab1_2/full_adder_schematic/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source /media/rishabhbt/DADA/CS220Labs/Lab1_2/full_adder_schematic/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin L13 [get_ports a]
+endgroup
+startgroup
+set_property package_pin L14 [get_ports b]
+endgroup
+startgroup
+set_property package_pin H18 [get_ports cin]
+endgroup
+startgroup
+set_property package_pin F9 [get_ports cout]
+endgroup
+startgroup
+set_property package_pin F12 [get_ports sum]
+endgroup
+set_property is_loc_fixed false [get_ports [list  sum]]
+set_property is_loc_fixed true [get_ports [list  sum]]
+set_property iostandard LVTTL [get_ports [list a]]
+set_property iostandard LVTTL [get_ports [list b]]
+set_property iostandard LVTTL [get_ports [list cin]]
+set_property iostandard LVTTL [get_ports [list cout]]
+set_property iostandard LVTTL [get_ports [list sum]]
+set_property drive 8 [get_ports [list cout]]
+set_property drive 8 [get_ports [list sum]]
+set_property pulltype PULLUP [get_ports [list a]]
+set_property pulltype PULLUP [get_ports [list b]]
+set_property pulltype PULLUP [get_ports [list cin]]
+save_constraints
