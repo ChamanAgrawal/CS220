@@ -1,3 +1,23 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date:    14:05:08 01/28/2019 
+// Design Name: 
+// Module Name:    eight_bit_comp 
+// Project Name: 
+// Target Devices: 
+// Tool versions: 
+// Description: 
+//
+// Dependencies: 
+//
+// Revision: 
+// Revision 0.01 - File Created
+// Additional Comments: 
+//
+//////////////////////////////////////////////////////////////////////////////////
 module eight_bit_comp(PB1, PB2, PB3, PB4, Y, l, g, e
     );
 	 input PB1;
@@ -32,6 +52,9 @@ module eight_bit_comp(PB1, PB2, PB3, PB4, Y, l, g, e
 	 
 	 reg [7:0]A;
 	 reg [7:0]B;
+	 wire l;
+	 wire g;
+	 wire e;
 	 
 	always @(posedge PB1) begin
 		A[3:0] <= #2 Y;
@@ -47,14 +70,14 @@ module eight_bit_comp(PB1, PB2, PB3, PB4, Y, l, g, e
 		B[7:4] <= #2 Y;
 	end
 	 
-	 comp C0(A[7], B[7], 1'b0, 1'b0, 1'b0, l0, g0, e0);
-	 comp C1(A[6], B[6], l0, g0, e0, l1, g1, e1);
-	 comp C2(A[5], B[5], l1, g1, e1, l2, g2, e2);
-	 comp C3(A[4], B[4], l2, g2, e2, l3, g3, e3);
-	 comp C4(A[3], B[3], l3, g3, e3, l4, g4, e4);
-	 comp C5(A[2], B[2], l4, g4, e4, l5, g5, e5);
-	 comp C6(A[1], B[1], l5, g5, e5, l6, g6, e6);
-	 comp C7(A[0], B[0], l6, g6, e6, l, g, e);
+	 comparator C0(A[7], B[7], 1'b0, 1'b0, 1'b1, l0, g0, e0);
+	 comparator C1(A[6], B[6], l0, g0, e0, l1, g1, e1);
+	 comparator C2(A[5], B[5], l1, g1, e1, l2, g2, e2);
+	 comparator C3(A[4], B[4], l2, g2, e2, l3, g3, e3);
+	 comparator C4(A[3], B[3], l3, g3, e3, l4, g4, e4);
+	 comparator C5(A[2], B[2], l4, g4, e4, l5, g5, e5);
+	 comparator C6(A[1], B[1], l5, g5, e5, l6, g6, e6);
+	 comparator C7(A[0], B[0], l6, g6, e6, l, g, e);
 	 
 	
 
