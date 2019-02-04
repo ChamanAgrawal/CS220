@@ -1,0 +1,72 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "sum[0]" LOC = F12;
+NET "sum[1]" LOC = E12;
+NET "sum[2]" LOC = E11;
+NET "sum[3]" LOC = F11;
+NET "sum[4]" LOC = C11;
+NET "sum[5]" LOC = D11;
+
+# PlanAhead Generated IO constraints 
+
+NET "sum[5]" IOSTANDARD = LVTTL;
+NET "sum[4]" IOSTANDARD = LVTTL;
+NET "sum[3]" IOSTANDARD = LVTTL;
+NET "sum[2]" IOSTANDARD = LVTTL;
+NET "sum[1]" IOSTANDARD = LVTTL;
+NET "sum[0]" IOSTANDARD = LVTTL;
+NET "sum[5]" DRIVE = 8;
+NET "sum[4]" DRIVE = 8;
+NET "sum[3]" DRIVE = 8;
+NET "sum[2]" DRIVE = 8;
+NET "sum[1]" DRIVE = 8;
+NET "sum[0]" DRIVE = 8;
+
+# PlanAhead Generated physical constraints 
+
+NET "Y[0]" LOC = L13;
+NET "Y[1]" LOC = L14;
+NET "Y[2]" LOC = H18;
+NET "Y[3]" LOC = N17;
+
+# PlanAhead Generated IO constraints 
+
+NET "Y[3]" IOSTANDARD = LVTTL;
+NET "Y[2]" IOSTANDARD = LVTTL;
+NET "Y[1]" IOSTANDARD = LVTTL;
+NET "Y[0]" IOSTANDARD = LVTTL;
+NET "Y[3]" PULLUP;
+NET "Y[2]" PULLUP;
+NET "Y[1]" PULLUP;
+NET "Y[0]" PULLUP;
+
+# PlanAhead Generated physical constraints 
+
+NET "carry" LOC = E9;
+
+# PlanAhead Generated IO constraints 
+
+NET "carry" IOSTANDARD = LVTTL;
+NET "carry" DRIVE = 8;
+
+# PlanAhead Generated physical constraints 
+
+NET "PB1" LOC = K17;
+NET "PB2" LOC = H13;
+NET "PB3" LOC = V4;
+NET "PB4" LOC = D18;
+NET "PB5" LOC = V16;
+
+# PlanAhead Generated IO constraints 
+
+NET "PB1" IOSTANDARD = LVTTL;
+NET "PB2" IOSTANDARD = LVTTL;
+NET "PB3" IOSTANDARD = LVTTL;
+NET "PB4" IOSTANDARD = LVTTL;
+NET "PB5" IOSTANDARD = LVTTL;
+NET "PB1" PULLDOWN;
+NET "PB2" PULLDOWN;
+NET "PB3" PULLDOWN;
+NET "PB4" PULLDOWN;
+NET "PB5" PULLDOWN;

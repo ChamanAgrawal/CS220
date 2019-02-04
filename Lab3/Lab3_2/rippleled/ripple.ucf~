@@ -1,0 +1,38 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "clk" LOC = C9;
+
+# PlanAhead Generated IO constraints 
+
+NET "clk" IOSTANDARD = LVCMOS33;
+
+# PlanAhead Generated physical constraints 
+
+NET "led0" LOC = F12;
+NET "led1" LOC = E12;
+NET "led2" LOC = E11;
+NET "led3" LOC = F11;
+NET "led4" LOC = C11;
+NET "led5" LOC = D11;
+NET "led6" LOC = E9;
+NET "led7" LOC = F9;
+
+# PlanAhead Generated IO constraints 
+
+NET "led0" IOSTANDARD = LVTTL;
+NET "led1" IOSTANDARD = LVTTL;
+NET "led2" IOSTANDARD = LVTTL;
+NET "led3" IOSTANDARD = LVTTL;
+NET "led4" IOSTANDARD = LVTTL;
+NET "led5" IOSTANDARD = LVTTL;
+NET "led6" IOSTANDARD = LVTTL;
+NET "led7" IOSTANDARD = LVTTL;
+NET "led0" DRIVE = 8;
+NET "led1" DRIVE = 8;
+NET "led2" DRIVE = 8;
+NET "led3" DRIVE = 8;
+NET "led4" DRIVE = 8;
+NET "led5" DRIVE = 8;
+NET "led6" DRIVE = 8;
+NET "led7" DRIVE = 8;
