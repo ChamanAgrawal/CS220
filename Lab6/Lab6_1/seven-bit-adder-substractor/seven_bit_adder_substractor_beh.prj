@@ -1,0 +1,5 @@
+verilog work "full_adder.v"
+verilog work "myinput.v"
+verilog work "is_rotation.v"
+verilog work "seven_bit_adder_substractor.v"
+verilog work "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

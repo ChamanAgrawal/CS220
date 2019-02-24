@@ -1,0 +1,29 @@
+Command line:
+   seven_bit_adder_substractor_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  53243
+
+Sun Feb 24 13:16:48 2019
+
+
+ Elaboration Time: 0.01 sec
+
+ Current Memory Usage: 204.411 Meg
+
+ Total Signals          : 77
+ Total Nets             : 58
+ Total Signal Drivers   : 43
+ Total Blocks           : 11
+ Total Primitive Blocks : 9
+ Total Processes        : 47
+ Total Traceable Variables  : 24
+ Total Scalar Nets and Variables : 161
+Total Line Count : 53
+
+ Total Simulation Time: 0.03 sec
+
+ Current Memory Usage: 279.912 Meg
+
+Sun Feb 24 13:16:52 2019
+
