@@ -1,0 +1,29 @@
+Command line:
+   rotator_top_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  59326
+
+Sun Feb 24 11:01:53 2019
+
+
+ Elaboration Time: 0.03 sec
+
+ Current Memory Usage: 204.407 Meg
+
+ Total Signals          : 32
+ Total Nets             : 26
+ Total Signal Drivers   : 15
+ Total Blocks           : 4
+ Total Primitive Blocks : 3
+ Total Processes        : 19
+ Total Traceable Variables  : 29
+ Total Scalar Nets and Variables : 117
+Total Line Count : 49
+
+ Total Simulation Time: 0.13 sec
+
+ Current Memory Usage: 279.908 Meg
+
+Sun Feb 24 11:02:28 2019
+

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "/home/chaman/git/CS220/Lab5/rotary_shaft_encoder/rotator_top_isim_beh.exe" -prj "/home/chaman/git/CS220/Lab5/rotary_shaft_encoder/rotator_top_beh.prj" "work.rotator_top" "work.glbl" 

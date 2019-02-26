@@ -1,0 +1,24 @@
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o /home/chaman/git/CS220/Lab5/rotary_shaft_encoder/rotator_top_isim_beh.exe -prj /home/chaman/git/CS220/Lab5/rotary_shaft_encoder/rotator_top_beh.prj work.rotator_top work.glbl 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "/home/chaman/git/CS220/Lab5/rotary_shaft_encoder/rotation.v" into library work
+Analyzing Verilog file "/home/chaman/git/CS220/Lab5/rotary_shaft_encoder/ripple.v" into library work
+Analyzing Verilog file "/home/chaman/git/CS220/Lab5/rotary_shaft_encoder/rotator_top.v" into library work
+Analyzing Verilog file "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 102976 KB
+Fuse CPU Usage: 1320 ms
+Compiling module rotation
+Compiling module ripple
+Compiling module rotator_top
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 4 Verilog Units
+Built simulation executable /home/chaman/git/CS220/Lab5/rotary_shaft_encoder/rotator_top_isim_beh.exe
+Fuse Memory Usage: 663160 KB
+Fuse CPU Usage: 1350 ms
+GCC CPU Usage: 980 ms

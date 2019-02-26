@@ -8,7 +8,13 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;/home/chaman/Downloads/6th sem/CS220/lab/lab-5/rotary_shaft_encoder/rotator_top.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;/home/chaman/git/CS220/Lab5/rotary_shaft_encoder/ripple.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;/home/chaman/git/CS220/Lab5/rotary_shaft_encoder/rotation.v&quot; into library work</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;/home/chaman/git/CS220/Lab5/rotary_shaft_encoder/rotator_top.v&quot; into library work</arg>
 </msg>
 
 </messages>

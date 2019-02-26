@@ -1,0 +1,4 @@
+verilog isim_temp "rotation.v"
+verilog isim_temp "ripple.v"
+verilog isim_temp "rotator_top.v"
+verilog isim_temp "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"
