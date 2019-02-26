@@ -1,0 +1,8 @@
+Release 14.7 Drc P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Tue Feb 26 11:14:00 2019
+
+drc -z seven_bit_adder_substractor.ncd seven_bit_adder_substractor.pcf
+
+DRC detected 0 errors and 0 warnings.

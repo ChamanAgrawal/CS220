@@ -18,6 +18,7 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
+
 module is_rotation( clk, ROT_A, ROT_B, rotation_event
     );
 	 
@@ -27,12 +28,11 @@ module is_rotation( clk, ROT_A, ROT_B, rotation_event
 	 reg rotation_event;
 	 
 	 always@(posedge clk) begin
-		if((ROT_A == 1) && (ROT_B == 1)) begin
-			rotation_event = 1;
+		if(ROT_A == 1 && ROT_B == 1) begin
+				rotation_event = 1;
 		end
-		if((ROT_A == 0) && (ROT_B == 0)) begin
-			rotation_event = 0;
+		else if(ROT_A == 0 && ROT_B == 0) begin
+				rotation_event = 0;
 		end
 	 end
-	 
 endmodule

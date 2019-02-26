@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2019-02-25T15:21:12</DateModified>
+  <DateModified>2019-02-26T10:26:33</DateModified>
   <ModuleName>seven_bit_adder_substractor</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>/home/chaman/git/CS220/Lab6/Lab6_1/seven-bit-adder-substractor/iseconfig/seven_bit_adder_substractor.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/chaman/git/CS220/Lab6/Lab6_1/seven-bit-adder-substractor</ImplementationReportsDirectory>
-  <DateInitialized>2019-02-25T15:21:11</DateInitialized>
+  <SavedFilePath>/home/chaman/Desktop/Lab6/Lab6_1/seven-bit-adder-substractor/iseconfig/seven_bit_adder_substractor.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/home/chaman/Desktop/Lab6/Lab6_1/seven-bit-adder-substractor/</ImplementationReportsDirectory>
+  <DateInitialized>2019-02-25T15:34:32</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
  <body>

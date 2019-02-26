@@ -8,16 +8,7 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;/home/chaman/git/CS220/Lab6/Lab6_1/seven-bit-adder-substractor/full_adder.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;/home/chaman/git/CS220/Lab6/Lab6_1/seven-bit-adder-substractor/is_rotation.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;/home/chaman/git/CS220/Lab6/Lab6_1/seven-bit-adder-substractor/myinput.v&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;/home/chaman/git/CS220/Lab6/Lab6_1/seven-bit-adder-substractor/seven_bit_adder_substractor.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;/home/chaman/Desktop/Lab6/Lab6_1/seven-bit-adder-substractor/myinput.v&quot; into library work</arg>
 </msg>
 
 </messages>

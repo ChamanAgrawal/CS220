@@ -18,7 +18,7 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module myinput( clk, Y, rotation_event, sum, carry
+module myinput(clk, Y, rotation_event, sum, carry
     );
 	 
 		input clk, rotation_event;
@@ -41,12 +41,16 @@ module myinput( clk, Y, rotation_event, sum, carry
 		reg [6:0] B;
 		
 		initial begin
-			prev_rotation_event = 1'b1;
+			prev_rotation_event = 1'b0;
 			counter = 5'b0;
+			type = 1'b0;
+			A = 32;
+			B = 32;
 		end
 	
 		always @(posedge clk) begin
 			if((prev_rotation_event == 0) && (rotation_event == 1)) begin
+				
 				if(counter == 0) begin
 					A[3:0] <= Y[3:0];
 				end
@@ -59,26 +63,26 @@ module myinput( clk, Y, rotation_event, sum, carry
 				else if(counter == 3) begin
 					B[6:4] <= Y[2:0];
 				end
-				else if(counter == 4) begin
-					type <= Y[0:0];
+				else if(counter == 4)begin
+					type <= Y[0];
+				end
+				else begin
+					counter <= 0;
+					A <= 127;
+					B <= 0;
+					type <= 0;
 				end
 				counter <= counter + 1;
-				
-				if(counter > 4) begin
-					counter <= 0;
-				end
 			end
 			prev_rotation_event <= rotation_event;
 		end
-		
-		full_adder FA0(A[0], B[0], type, type, sum[0], carry0);
-		full_adder FA1(A[1], B[1], type, carry0, sum[1], carry1);
-		full_adder FA2(A[2], B[2], type, carry1, sum[2], carry2);
-		full_adder FA3(A[3], B[3], type, carry2, sum[3], carry3);
-		full_adder FA4(A[4], B[4], type, carry3, sum[4], carry4);
-		full_adder FA5(A[5], B[5], type, carry4, sum[5], carry5);
-		full_adder FA6(A[6], B[6], type, carry5, sum[6], carry);
-		
-		assign carry = (carry^carry5);
+		full_adder FA0(A[0], B[0]^type, type, sum[0], carry0);
+		full_adder FA1(A[1], B[1]^type, carry0, sum[1], carry1);
+		full_adder FA2(A[2], B[2]^type, carry1, sum[2], carry2);
+		full_adder FA3(A[3], B[3]^type, carry2, sum[3], carry3);
+		full_adder FA4(A[4], B[4]^type, carry3, sum[4], carry4);
+		full_adder FA5(A[5], B[5]^type, carry4, sum[5], carry5);
+		full_adder FA6(A[6], B[6]^type, carry5, sum[6], carry6);
+	assign carry = (carry6^carry5);
 
 endmodule

@@ -22,14 +22,69 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="seven-bit-adder-substractor.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="full_adder_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="full_adder_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="full_adder_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="full_adder_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="seven_bit_adder_substractor_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_1"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_2"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="seven_bit_adder_substractor.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="seven_bit_adder_substractor.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="seven_bit_adder_substractor.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="seven_bit_adder_substractor.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="seven_bit_adder_substractor.drc" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="seven_bit_adder_substractor.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="seven_bit_adder_substractor.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="seven_bit_adder_substractor.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="seven_bit_adder_substractor.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="seven_bit_adder_substractor.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="seven_bit_adder_substractor.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="seven_bit_adder_substractor.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="seven_bit_adder_substractor.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="seven_bit_adder_substractor.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="seven_bit_adder_substractor.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="seven_bit_adder_substractor.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="seven_bit_adder_substractor.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="seven_bit_adder_substractor.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="seven_bit_adder_substractor.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="seven_bit_adder_substractor.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="seven_bit_adder_substractor.ut" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="seven_bit_adder_substractor.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="seven_bit_adder_substractor.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="seven_bit_adder_substractor_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="seven_bit_adder_substractor_guide.ncd" xil_pn:origination="imported"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="seven_bit_adder_substractor_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="seven_bit_adder_substractor_isim_beh.wdb"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="seven_bit_adder_substractor_stx_beh.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="seven_bit_adder_substractor_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="seven_bit_adder_substractor_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="seven_bit_adder_substractor_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="seven_bit_adder_substractor_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="seven_bit_adder_substractor_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="seven_bit_adder_substractor_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="seven_bit_adder_substractor_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="seven_bit_adder_substractor_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="seven_bit_adder_substractor_par.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="seven_bit_adder_substractor_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="seven_bit_adder_substractor_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="seven_bit_adder_substractor_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="seven_bit_adder_substractor_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="seven_bit_adder_substractor_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
@@ -37,19 +92,23 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1550994399" xil_pn:in_ck="3449059628166804092" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1550994399">
+    <transform xil_pn:end_ts="1551159539" xil_pn:in_ck="3449059628166804092" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1551159539">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="full_adder.v"/>
       <outfile xil_pn:name="is_rotation.v"/>
       <outfile xil_pn:name="myinput.v"/>
       <outfile xil_pn:name="seven_bit_adder_substractor.v"/>
     </transform>
-    <transform xil_pn:end_ts="1550994404" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="6290466167381468848" xil_pn:start_ts="1550994404">
+    <transform xil_pn:end_ts="1551159542" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="205010303659158313" xil_pn:start_ts="1551159542">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1550994404" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-4711233709439427854" xil_pn:start_ts="1550994404">
+    <transform xil_pn:end_ts="1551159542" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-6483874682184715349" xil_pn:start_ts="1551159542">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -57,32 +116,154 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1550994404" xil_pn:in_ck="3449059628166804092" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1550994404">
+    <transform xil_pn:end_ts="1551159542" xil_pn:in_ck="3449059628166804092" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1551159542">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="full_adder.v"/>
       <outfile xil_pn:name="is_rotation.v"/>
       <outfile xil_pn:name="myinput.v"/>
       <outfile xil_pn:name="seven_bit_adder_substractor.v"/>
     </transform>
-    <transform xil_pn:end_ts="1550994405" xil_pn:in_ck="3449059628166804092" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-6849114897940770015" xil_pn:start_ts="1550994404">
+    <transform xil_pn:end_ts="1551159545" xil_pn:in_ck="3449059628166804092" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="7346504758305231667" xil_pn:start_ts="1551159542">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="full_adder_beh.prj"/>
+      <outfile xil_pn:name="full_adder_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
-      <outfile xil_pn:name="seven_bit_adder_substractor_beh.prj"/>
-      <outfile xil_pn:name="seven_bit_adder_substractor_isim_beh.exe"/>
+      <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1550994406" xil_pn:in_ck="-4597514382777306680" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-1290752735830222748" xil_pn:start_ts="1550994405">
+    <transform xil_pn:end_ts="1551159545" xil_pn:in_ck="-6150490058666662295" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-3051280258569749450" xil_pn:start_ts="1551159545">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="full_adder_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+    </transform>
+    <transform xil_pn:end_ts="1551089097" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1551089097">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1551089097" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="6387990639208305330" xil_pn:start_ts="1551089097">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1551089097" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="2656813964139192824" xil_pn:start_ts="1551089097">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1551089097" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1551089097">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1551089097" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="6290466167381468848" xil_pn:start_ts="1551089097">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1551090177" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-3893270297158069842" xil_pn:start_ts="1551090177">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1551090177" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-4748914795735208254" xil_pn:start_ts="1551090177">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1551159794" xil_pn:in_ck="3449059628166804092" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-8857348464103726005" xil_pn:start_ts="1551159787">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="isim.cmd"/>
-      <outfile xil_pn:name="seven_bit_adder_substractor_isim_beh.wdb"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="seven_bit_adder_substractor.lso"/>
+      <outfile xil_pn:name="seven_bit_adder_substractor.ngc"/>
+      <outfile xil_pn:name="seven_bit_adder_substractor.ngr"/>
+      <outfile xil_pn:name="seven_bit_adder_substractor.prj"/>
+      <outfile xil_pn:name="seven_bit_adder_substractor.stx"/>
+      <outfile xil_pn:name="seven_bit_adder_substractor.syr"/>
+      <outfile xil_pn:name="seven_bit_adder_substractor.xst"/>
+      <outfile xil_pn:name="seven_bit_adder_substractor_stx_beh.prj"/>
+      <outfile xil_pn:name="seven_bit_adder_substractor_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1551159802" xil_pn:in_ck="-6418904792793287195" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="4796562575268421467" xil_pn:start_ts="1551159802">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1551159809" xil_pn:in_ck="-2530904622566673756" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-2796524851229549349" xil_pn:start_ts="1551159802">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="seven_bit_adder_substractor.bld"/>
+      <outfile xil_pn:name="seven_bit_adder_substractor.ngd"/>
+      <outfile xil_pn:name="seven_bit_adder_substractor_ngdbuild.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1551159816" xil_pn:in_ck="4783090110564645509" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-5849673150125579957" xil_pn:start_ts="1551159809">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <outfile xil_pn:name="seven_bit_adder_substractor.pcf"/>
+      <outfile xil_pn:name="seven_bit_adder_substractor_map.map"/>
+      <outfile xil_pn:name="seven_bit_adder_substractor_map.mrp"/>
+      <outfile xil_pn:name="seven_bit_adder_substractor_map.ncd"/>
+      <outfile xil_pn:name="seven_bit_adder_substractor_map.ngm"/>
+      <outfile xil_pn:name="seven_bit_adder_substractor_map.xrpt"/>
+      <outfile xil_pn:name="seven_bit_adder_substractor_summary.xml"/>
+      <outfile xil_pn:name="seven_bit_adder_substractor_usage.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1551159829" xil_pn:in_ck="5674940015510893438" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-5563652517805085498" xil_pn:start_ts="1551159816">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+      <outfile xil_pn:name="seven_bit_adder_substractor.ncd"/>
+      <outfile xil_pn:name="seven_bit_adder_substractor.pad"/>
+      <outfile xil_pn:name="seven_bit_adder_substractor.par"/>
+      <outfile xil_pn:name="seven_bit_adder_substractor.ptwx"/>
+      <outfile xil_pn:name="seven_bit_adder_substractor.unroutes"/>
+      <outfile xil_pn:name="seven_bit_adder_substractor.xpi"/>
+      <outfile xil_pn:name="seven_bit_adder_substractor_pad.csv"/>
+      <outfile xil_pn:name="seven_bit_adder_substractor_pad.txt"/>
+      <outfile xil_pn:name="seven_bit_adder_substractor_par.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1551159844" xil_pn:in_ck="-6418904792793294820" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1551159838">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="seven_bit_adder_substractor.bgn"/>
+      <outfile xil_pn:name="seven_bit_adder_substractor.bit"/>
+      <outfile xil_pn:name="seven_bit_adder_substractor.drc"/>
+      <outfile xil_pn:name="seven_bit_adder_substractor.ut"/>
+      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
+      <outfile xil_pn:name="webtalk.log"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1551093443" xil_pn:in_ck="-6418904792793307674" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="5582947192412673156" xil_pn:start_ts="1551093441">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
+    </transform>
+    <transform xil_pn:end_ts="1551159829" xil_pn:in_ck="-1433522829872813439" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1551159826">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+      <outfile xil_pn:name="seven_bit_adder_substractor.twr"/>
+      <outfile xil_pn:name="seven_bit_adder_substractor.twx"/>
     </transform>
   </transforms>
 

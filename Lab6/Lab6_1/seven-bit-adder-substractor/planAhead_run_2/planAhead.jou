@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+# Start of session at: Mon Feb 25 16:52:02 2019
+# Process ID: 15400
+# Log file: /home/chaman/Desktop/Lab6/Lab6_1/seven-bit-adder-substractor/planAhead_run_2/planAhead.log
+# Journal file: /home/chaman/Desktop/Lab6/Lab6_1/seven-bit-adder-substractor/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source /home/chaman/Desktop/Lab6/Lab6_1/seven-bit-adder-substractor/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin V16 [get_ports reset]
+endgroup
+set_property iostandard LVTTL [get_ports [list reset]]
+set_property pulltype PULLDOWN [get_ports [list reset]]
+save_constraints

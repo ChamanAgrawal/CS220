@@ -18,11 +18,10 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module full_adder(a,b,type,cin,sum,cout
+module full_adder(a,b,cin,sum,cout
     );
 	input a;
 	input b;
-	input type;
 	input cin;
 	
 	output sum;
@@ -30,8 +29,8 @@ module full_adder(a,b,type,cin,sum,cout
 	output cout;
 	wire cout;
 	
-	assign sum = a^(b^type)^cin;
-	assign cout = (a&(b^type))|((b^type)&cin)|(cin&a);
+	assign sum = ((a^b)^cin);
+	assign cout = (((a&b)|(b&cin))|(cin&a));
 	
 
 endmodule
