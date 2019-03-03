@@ -30,9 +30,16 @@ module grid_walk(clk,Y,rotation_event,final_x,final_y
 	 assign initial_x = 4'b0;
 	 assign initial_y = 4'b0;
 	 reg[2:0] dir;
+	 reg[2:0] dir_x;
+	 reg[2:0] dir_y;
 	 reg[2:0] dis;
+	 reg[2:0] dis_x;
+	 reg[2:0] dis_y;
+	 reg[3:0] A;
+	 reg[3:0] B;
 	 wire carry_x;
 	 wire carry_y;
+	 wire carry;
 	 reg prev_rotation_event;	
 	 assign prev_rotation_event = 1'b0;
 
@@ -41,30 +48,44 @@ always @(posedge clk) begin
 				dir <= Y[1:0];
 				dis <= Y[3:2];
 				if(dir==0 || dir==1) begin
+					dir_x <= dir;
+					dis_x <= dis;
+					dir_y <= 2'b0;
+					dis_y <= 2'b0;
 					if(dis > initial_x && dir==1) begin
-						final_x <= 4'b0;
-						break;
+						dir_x <= 2'b0;
+						dis_x <= 2'b0;
 					end
-					five_bit_adder(initial_x,dir,dis,final_x,carry_x);
 				end
 				else begin
-					if(dis > initial_y && dir==3) begin
-						final_y <= 4'b0;
-						break;
+					dir_y <= dir;
+					dis_y <= dis;
+					dir_x <= 2'b0;
+					dis_x <= 2'b0;
+					if(dis > initial_y && dir==1) begin
+						dir_y <= 2'b0;
+						dis_y <= 2'b0;
 					end
-					five_bit_adder(initial_y,dir,dis,final_y,carry_y);
 				end
 				initial_x <= final_x;
 				initial_y <= final_y;
 				if(carry_x == 1) begin
 					final_x <= 4'b1111;
-					break;
 				end
+				else begin
+					final_x <= A;
+				end	
 				if(carry_y == 1) begin
 					final_y <= 4'b1111;
-					break;
+				end
+				else begin
+					final_y <= B;
 				end	
 			end
 			prev_rotation_event <= rotation_event;
 		end
+		
+		five_bit_adder uut0(initial_x,dir_x,dis_x,A,carry_x);
+		five_bit_adder uut1(initial_y,dir_y,dis_y,B,carry_y);
+		
 endmodule
