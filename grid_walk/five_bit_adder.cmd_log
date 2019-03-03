@@ -5,3 +5,5 @@ xst -intstyle ise -ifn "D:/CS220/Lab 6/grid_walk/five_bit_adder.xst" -ofn "D:/CS
 xst -intstyle ise -ifn "D:/CS220/Lab 6/grid_walk/five_bit_adder.xst" -ofn "D:/CS220/Lab 6/grid_walk/five_bit_adder.syr" 
 xst -intstyle ise -ifn "D:/CS220/Lab 6/grid_walk/five_bit_adder.xst" -ofn "D:/CS220/Lab 6/grid_walk/five_bit_adder.syr" 
 xst -intstyle ise -ifn "D:/CS220/Lab 6/grid_walk/five_bit_adder.xst" -ofn "D:/CS220/Lab 6/grid_walk/five_bit_adder.syr" 
+xst -intstyle ise -ifn "D:/CS220/Lab 6/grid_walk/five_bit_adder.xst" -ofn "D:/CS220/Lab 6/grid_walk/five_bit_adder.syr" 
+xst -intstyle ise -ifn "D:/CS220/Lab 6/grid_walk/five_bit_adder.xst" -ofn "D:/CS220/Lab 6/grid_walk/five_bit_adder.syr" 

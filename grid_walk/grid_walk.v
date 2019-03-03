@@ -41,27 +41,27 @@ always @(posedge clk) begin
 				dir <= Y[1:0];
 				dis <= Y[3:2];
 				if(dir==0 || dir==1) begin
+					if(dis > initial_x && dir==1) begin
+						final_x <= 4'b0;
+						break;
+					end
 					five_bit_adder(initial_x,dir,dis,final_x,carry_x);
 				end
-				else begin 
+				else begin
+					if(dis > initial_y && dir==3) begin
+						final_y <= 4'b0;
+						break;
+					end
 					five_bit_adder(initial_y,dir,dis,final_y,carry_y);
 				end
 				initial_x <= final_x;
 				initial_y <= final_y;
-				if(initial_x < 0) begin
-					initial_x <= 4'b0;
-					break;
-				end
-				if(initial_y < 0) begin
-					initial_y <= 4'b0;
-					break;
-				end
 				if(carry_x == 1) begin
-					initial_x <= 4'b1111;
+					final_x <= 4'b1111;
 					break;
 				end
 				if(carry_y == 1) begin
-					initial_y <= 4'b1111;
+					final_y <= 4'b1111;
 					break;
 				end	
 			end

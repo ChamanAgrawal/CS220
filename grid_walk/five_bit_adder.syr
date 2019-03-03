@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.16 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.16 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Reading design: five_bit_adder.prj
 
@@ -68,7 +68,7 @@ Automatic Register Balancing       : No
 
 ---- Target Options
 Add IO Buffers                     : YES
-Global Maximum Fanout              : 500
+Global Maximum Fanout              : 100000
 Add Generic Clock Buffer(BUFG)     : 24
 Register Duplication               : YES
 Slice Packing                      : YES
@@ -221,8 +221,8 @@ Design Statistics
 
 Cell Usage :
 # BELS                             : 8
-#      LUT2                        : 3
-#      LUT3                        : 2
+#      LUT2                        : 4
+#      LUT3                        : 1
 #      LUT4                        : 3
 # IO Buffers                       : 12
 #      IBUF                        : 7
@@ -270,7 +270,7 @@ Speed Grade: -4
    Minimum period: No path found
    Minimum input arrival time before clock: No path found
    Maximum output required time after clock: No path found
-   Maximum combinational path delay: 8.932ns
+   Maximum combinational path delay: 8.876ns
 
 Timing Detail:
 --------------
@@ -278,9 +278,9 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 32 / 5
+  Total number of paths / destination ports: 31 / 5
 -------------------------------------------------------------------------
-Delay:               8.932ns (Levels of Logic = 5)
+Delay:               8.876ns (Levels of Logic = 5)
   Source:            dir<0> (PAD)
   Destination:       carry (PAD)
 
@@ -288,24 +288,24 @@ Delay:               8.932ns (Levels of Logic = 5)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             4   1.218   0.762  dir_0_IBUF (dir_0_IBUF)
+     IBUF:I->O             3   1.218   0.706  dir_0_IBUF (dir_0_IBUF)
      LUT2:I0->O            2   0.704   0.526  Mxor__xor0001_Result1 (_xor0001)
      LUT4:I1->O            2   0.704   0.622  FA2/cout_and00021 (FA2/cout_and0002)
      LUT2:I0->O            1   0.704   0.420  FA3/cout_and00021 (carry_OBUF)
      OBUF:I->O                 3.272          carry_OBUF (carry)
     ----------------------------------------
-    Total                      8.932ns (6.602ns logic, 2.330ns route)
-                                       (73.9% logic, 26.1% route)
+    Total                      8.876ns (6.602ns logic, 2.274ns route)
+                                       (74.4% logic, 25.6% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 6.10 secs
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 3.56 secs
  
 --> 
 
-Total memory usage is 4534332 kilobytes
+Total memory usage is 4534352 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    1 (   0 filtered)

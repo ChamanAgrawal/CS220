@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Xst" timeStamp="Sat Mar 02 14:59:07 2019">
+  <application stringID="Xst" timeStamp="Mon Mar 04 01:38:15 2019">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -92,7 +92,7 @@
       <item DEFAULT="NO" label="-async_to_sync" stringID="XST_ASYNCTOSYNC" value="NO"/>
       <item DEFAULT="AUTO" label="-mult_style" stringID="XST_MULTSTYLE" value="Auto"/>
       <item DEFAULT="YES" label="-iobuf" stringID="XST_IOBUF" value="YES"/>
-      <item DEFAULT="500" label="-max_fanout" stringID="XST_MAXFANOUT" value="500"/>
+      <item DEFAULT="500" label="-max_fanout" stringID="XST_MAXFANOUT" value="100000"/>
       <item DEFAULT="24" label="-bufg" stringID="XST_BUFG" value="24"/>
       <item DEFAULT="YES" label="-register_duplication" stringID="XST_REGISTERDUPLICATION" value="YES"/>
       <item DEFAULT="NO" label="-register_balancing" stringID="XST_REGISTERBALANCING" value="No"/>
@@ -136,8 +136,8 @@
       </section>
       <section stringID="XST_CELL_USAGE">
         <item dataType="int" stringID="XST_BELS" value="8">
-          <item dataType="int" stringID="XST_LUT2" value="3"/>
-          <item dataType="int" stringID="XST_LUT3" value="2"/>
+          <item dataType="int" stringID="XST_LUT2" value="4"/>
+          <item dataType="int" stringID="XST_LUT3" value="1"/>
           <item dataType="int" stringID="XST_LUT4" value="3"/>
         </item>
         <item dataType="int" stringID="XST_IO_BUFFERS" value="12">
