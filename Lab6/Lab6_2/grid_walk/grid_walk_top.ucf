@@ -1,0 +1,64 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "final_y[0]" LOC = F12;
+NET "final_y[1]" LOC = E12;
+NET "final_y[2]" LOC = E11;
+NET "final_y[3]" LOC = F11;
+NET "final_x[0]" LOC = C11;
+NET "final_x[1]" LOC = D11;
+NET "final_x[2]" LOC = E9;
+NET "final_x[3]" LOC = F9;
+
+# PlanAhead Generated IO constraints 
+
+NET "final_x[3]" IOSTANDARD = LVTTL;
+NET "final_x[2]" IOSTANDARD = LVTTL;
+NET "final_x[1]" IOSTANDARD = LVTTL;
+NET "final_x[0]" IOSTANDARD = LVTTL;
+NET "final_y[3]" IOSTANDARD = LVTTL;
+NET "final_y[2]" IOSTANDARD = LVTTL;
+NET "final_y[1]" IOSTANDARD = LVTTL;
+NET "final_y[0]" IOSTANDARD = LVTTL;
+NET "final_x[3]" DRIVE = 8;
+NET "final_x[2]" DRIVE = 8;
+NET "final_x[1]" DRIVE = 8;
+NET "final_x[0]" DRIVE = 8;
+NET "final_y[3]" DRIVE = 8;
+NET "final_y[2]" DRIVE = 8;
+NET "final_y[1]" DRIVE = 8;
+NET "final_y[0]" DRIVE = 8;
+
+# PlanAhead Generated physical constraints 
+
+NET "Y[0]" LOC = L13;
+NET "Y[1]" LOC = L14;
+NET "Y[2]" LOC = H18;
+NET "Y[3]" LOC = N17;
+
+# PlanAhead Generated IO constraints 
+
+NET "Y[3]" IOSTANDARD = LVTTL;
+NET "Y[2]" IOSTANDARD = LVTTL;
+NET "Y[1]" IOSTANDARD = LVTTL;
+NET "Y[0]" IOSTANDARD = LVTTL;
+NET "Y[3]" PULLUP;
+NET "Y[2]" PULLUP;
+NET "Y[1]" PULLUP;
+NET "Y[0]" PULLUP;
+
+# PlanAhead Generated physical constraints 
+
+NET "clk" LOC = C9;
+NET "clk" PERIOD = 20.0ns HIGH 50%;
+
+NET "ROT_A" LOC = K18;
+NET "ROT_B" LOC = G18;
+
+# PlanAhead Generated IO constraints 
+
+NET "clk" IOSTANDARD = LVCMOS25;
+NET "ROT_A" IOSTANDARD = LVTTL;
+NET "ROT_B" IOSTANDARD = LVTTL;
+NET "ROT_A" PULLUP;
+NET "ROT_B" PULLUP;

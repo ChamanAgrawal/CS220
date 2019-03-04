@@ -1,0 +1,121 @@
+
+****** PlanAhead v14.7 (64-bit)
+  **** Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+    ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source /home/chaman/git/CS220/Lab6/Lab6_2/grid_walk/pa.fromHdl.tcl
+# create_project -name grid_walk -dir "/home/chaman/git/CS220/Lab6/Lab6_2/grid_walk/planAhead_run_1" -part xc3s500efg320-4
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "grid_walk_top.ucf" [current_fileset -constrset]
+Adding file '/home/chaman/git/CS220/Lab6/Lab6_2/grid_walk/grid_walk_top.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {full_adder.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {five_bit_adder.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {is_rotation.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {grid_walk.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {grid_walk_top.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set_property top grid_walk_top $srcset
+# add_files [list {grid_walk_top.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc3s500efg320-4
+Using Verific elaboration
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Analyzing Verilog file "/home/chaman/git/CS220/Lab6/Lab6_2/grid_walk/full_adder.v" into library work
+Analyzing Verilog file "/home/chaman/git/CS220/Lab6/Lab6_2/grid_walk/five_bit_adder.v" into library work
+Analyzing Verilog file "/home/chaman/git/CS220/Lab6/Lab6_2/grid_walk/is_rotation.v" into library work
+Analyzing Verilog file "/home/chaman/git/CS220/Lab6/Lab6_2/grid_walk/grid_walk.v" into library work
+Analyzing Verilog file "/home/chaman/git/CS220/Lab6/Lab6_2/grid_walk/grid_walk_top.v" into library work
+INFO: [Designutils 20-910] Reading macro library /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn
+Parsing EDIF File [/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Finished Parsing EDIF File [/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Loading clock regions from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan3e/spartan3e/xc3s500e/ClockRegion.xml
+Loading clock buffers from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan3e/spartan3e/xc3s500e/ClockBuffers.xml
+Loading package from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan3e/spartan3e/xc3s500e/fg320/Package.xml
+Loading io standards from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan3e/IOStandards.xml
+INFO: [Device 21-19] Loading pkg sso from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan3e/spartan3e/xc3s500e/fg320/SSORules.xml
+Loading list of drcs for the architecture : /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan3e/spartan3e/drc.xml
+INFO: [Timing 38-77] Reading timing library /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+INFO: [Timing 38-34] Done reading timing library /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+Parsing UCF File [/home/chaman/git/CS220/Lab6/Lab6_2/grid_walk/grid_walk_top.ucf]
+Finished Parsing UCF File [/home/chaman/git/CS220/Lab6/Lab6_2/grid_walk/grid_walk_top.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: d3475597
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin F12 [get_ports {final_y[0]}]
+endgroup
+startgroup
+set_property package_pin E12 [get_ports {final_y[1]}]
+endgroup
+startgroup
+set_property package_pin E11 [get_ports {final_y[2]}]
+endgroup
+startgroup
+set_property package_pin F11 [get_ports {final_y[3]}]
+endgroup
+startgroup
+set_property package_pin C11 [get_ports {final_x[0]}]
+endgroup
+startgroup
+set_property package_pin D11 [get_ports {final_x[1]}]
+endgroup
+startgroup
+set_property package_pin E9 [get_ports {final_x[2]}]
+endgroup
+startgroup
+set_property package_pin F9 [get_ports {final_x[3]}]
+endgroup
+set_property iostandard LVTTL [get_ports [list {final_x[3]} {final_x[2]} {final_x[1]} {final_x[0]}]]
+set_property iostandard LVTTL [get_ports [list {final_y[3]} {final_y[2]} {final_y[1]} {final_y[0]}]]
+set_property drive 8 [get_ports [list {final_x[3]} {final_x[2]} {final_x[1]} {final_x[0]}]]
+set_property drive 8 [get_ports [list {final_y[3]} {final_y[2]} {final_y[1]} {final_y[0]}]]
+startgroup
+set_property package_pin L13 [get_ports {Y[0]}]
+endgroup
+startgroup
+set_property package_pin L14 [get_ports {Y[1]}]
+endgroup
+startgroup
+set_property package_pin H18 [get_ports {Y[2]}]
+endgroup
+startgroup
+set_property package_pin N17 [get_ports {Y[3]}]
+endgroup
+set_property iostandard LVTTL [get_ports [list {Y[3]} {Y[2]} {Y[1]} {Y[0]}]]
+set_property pulltype PULLUP [get_ports [list {Y[3]} {Y[2]} {Y[1]} {Y[0]}]]
+startgroup
+set_property package_pin C9 [get_ports clk]
+endgroup
+startgroup
+set_property package_pin K18 [get_ports ROT_A]
+endgroup
+startgroup
+set_property package_pin G18 [get_ports ROT_B]
+endgroup
+set_property iostandard LVCMOS25 [get_ports [list clk]]
+set_property iostandard LVTTL [get_ports [list ROT_A]]
+set_property iostandard LVTTL [get_ports [list ROT_B]]
+set_property pulltype PULLUP [get_ports [list ROT_A]]
+set_property pulltype PULLUP [get_ports [list ROT_B]]
+save_constraints
+exit
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Mon Mar  4 12:30:15 2019...
+INFO: [Common 17-83] Releasing license: PlanAhead

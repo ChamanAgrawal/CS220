@@ -1,8 +1,8 @@
 INTSTYLE=ise
-INFILE=/home/chaman/Desktop/Lab6/Lab6_1/seven-bit-adder-substractor/seven_bit_adder_substractor.ncd
-OUTFILE=/home/chaman/Desktop/Lab6/Lab6_1/seven-bit-adder-substractor/seven_bit_adder_substractor.bit
+INFILE=/media/chamanag/8B9E-BFB0/Lab6/Lab6_1/seven-bit-adder-substractor/seven_bit_adder_substractor.ncd
+OUTFILE=/media/chamanag/8B9E-BFB0/Lab6/Lab6_1/seven-bit-adder-substractor/seven_bit_adder_substractor.bit
 FAMILY=Spartan3E
 PART=xc3s500e-4fg320
-WORKINGDIR=/home/chaman/Desktop/Lab6/Lab6_1/seven-bit-adder-substractor
+WORKINGDIR=/media/chamanag/8B9E-BFB0/Lab6/Lab6_1/seven-bit-adder-substractor
 LICENSE=WebPack
-USER_INFO=211671844_0_0_473
+USER_INFO=211450758_0_0_676

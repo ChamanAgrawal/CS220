@@ -1,7 +1,7 @@
 Release 14.7 Drc P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-Mon Mar  4 11:48:50 2019
+Mon Mar  4 12:31:14 2019
 
 drc -z grid_walk_top.ncd grid_walk_top.pcf
 

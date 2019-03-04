@@ -1,7 +1,7 @@
 
 # PlanAhead Launch Script for Pre-Synthesis Floorplanning, created by Project Navigator
 
-create_project -name seven-bit-adder-substractor -dir "/home/chaman/Desktop/Lab6/Lab6_1/seven-bit-adder-substractor/planAhead_run_2" -part xc3s500efg320-4
+create_project -name seven-bit-adder-substractor -dir "/home/chaman/git/CS220/Lab6/Lab6_1/seven-bit-adder-substractor/planAhead_run_4" -part xc3s500efg320-4
 set_param project.pinAheadLayout yes
 set srcset [get_property srcset [current_run -impl]]
 set_property target_constrs_file "seven_bit_adder_substractor.ucf" [current_fileset -constrset]

@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=/media/chamanag/8B9E-BFB0/Lab6/Lab6_1/seven-bit-adder-substractor/impact.xsl
+OUTFILE=/media/chamanag/8B9E-BFB0/Lab6/Lab6_1/seven-bit-adder-substractor/impact.xsl
+FAMILY=Multiple
+PART=Multiple
+WORKINGDIR=/media/chamanag/8B9E-BFB0/Lab6/Lab6_1/seven-bit-adder-substractor
+LICENSE=iMPACT
+USER_INFO=iMPACT

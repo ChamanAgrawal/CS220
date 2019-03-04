@@ -39,6 +39,8 @@
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_1"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_2"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_3"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_4"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="seven_bit_adder_substractor.bgn" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="seven_bit_adder_substractor.bit" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="seven_bit_adder_substractor.bld"/>
@@ -182,7 +184,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1551159794" xil_pn:in_ck="3449059628166804092" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-8857348464103726005" xil_pn:start_ts="1551159787">
+    <transform xil_pn:end_ts="1551693080" xil_pn:in_ck="3449059628166804092" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-8857348464103726005" xil_pn:start_ts="1551693071">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
@@ -204,7 +206,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1551159809" xil_pn:in_ck="-2530904622566673756" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-2796524851229549349" xil_pn:start_ts="1551159802">
+    <transform xil_pn:end_ts="1551693087" xil_pn:in_ck="-2530904622566673756" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-2796524851229549349" xil_pn:start_ts="1551693080">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_ngo"/>
@@ -213,9 +215,11 @@
       <outfile xil_pn:name="seven_bit_adder_substractor.ngd"/>
       <outfile xil_pn:name="seven_bit_adder_substractor_ngdbuild.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1551159816" xil_pn:in_ck="4783090110564645509" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-5849673150125579957" xil_pn:start_ts="1551159809">
+    <transform xil_pn:end_ts="1551693093" xil_pn:in_ck="4783090110564645509" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-5849673150125579957" xil_pn:start_ts="1551693087">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
       <outfile xil_pn:name="seven_bit_adder_substractor.pcf"/>
       <outfile xil_pn:name="seven_bit_adder_substractor_map.map"/>
@@ -226,7 +230,7 @@
       <outfile xil_pn:name="seven_bit_adder_substractor_summary.xml"/>
       <outfile xil_pn:name="seven_bit_adder_substractor_usage.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1551159829" xil_pn:in_ck="5674940015510893438" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-5563652517805085498" xil_pn:start_ts="1551159816">
+    <transform xil_pn:end_ts="1551693106" xil_pn:in_ck="5674940015510893438" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-5563652517805085498" xil_pn:start_ts="1551693093">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
@@ -240,9 +244,11 @@
       <outfile xil_pn:name="seven_bit_adder_substractor_pad.txt"/>
       <outfile xil_pn:name="seven_bit_adder_substractor_par.xrpt"/>
     </transform>
-    <transform xil_pn:end_ts="1551159844" xil_pn:in_ck="-6418904792793294820" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1551159838">
+    <transform xil_pn:end_ts="1551693113" xil_pn:in_ck="-6418904792793294820" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1551693106">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="seven_bit_adder_substractor.bgn"/>
       <outfile xil_pn:name="seven_bit_adder_substractor.bit"/>
@@ -252,13 +258,11 @@
       <outfile xil_pn:name="webtalk.log"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
     </transform>
-    <transform xil_pn:end_ts="1551093443" xil_pn:in_ck="-6418904792793307674" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="5582947192412673156" xil_pn:start_ts="1551093441">
+    <transform xil_pn:end_ts="1551693124" xil_pn:in_ck="-6418904792793307674" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="5582947192412673156" xil_pn:start_ts="1551693120">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="InputChanged"/>
     </transform>
-    <transform xil_pn:end_ts="1551159829" xil_pn:in_ck="-1433522829872813439" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1551159826">
+    <transform xil_pn:end_ts="1551693106" xil_pn:in_ck="-1433522829872813439" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1551693103">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
