@@ -1,1 +1,0 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "/home/chaman/git/CS220/grid_walk/five_bit_adder_isim_beh.exe" -prj "/home/chaman/git/CS220/grid_walk/five_bit_adder_beh.prj" "work.five_bit_adder" "work.glbl" 
