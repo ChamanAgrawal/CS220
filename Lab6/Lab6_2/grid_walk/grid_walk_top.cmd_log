@@ -1,0 +1,11 @@
+xst -intstyle ise -ifn "/home/chaman/git/CS220/Lab6/Lab6_2/grid_walk/grid_walk_top.xst" -ofn "/home/chaman/git/CS220/Lab6/Lab6_2/grid_walk/grid_walk_top.syr" 
+xst -intstyle ise -ifn "/home/chaman/git/CS220/Lab6/Lab6_2/grid_walk/grid_walk_top.xst" -ofn "/home/chaman/git/CS220/Lab6/Lab6_2/grid_walk/grid_walk_top.syr" 
+xst -intstyle ise -ifn "/home/chaman/git/CS220/Lab6/Lab6_2/grid_walk/grid_walk_top.xst" -ofn "/home/chaman/git/CS220/Lab6/Lab6_2/grid_walk/grid_walk_top.syr" 
+xst -intstyle ise -ifn "/home/chaman/git/CS220/Lab6/Lab6_2/grid_walk/grid_walk_top.xst" -ofn "/home/chaman/git/CS220/Lab6/Lab6_2/grid_walk/grid_walk_top.syr" 
+xst -intstyle ise -ifn "/home/chaman/git/CS220/Lab6/Lab6_2/grid_walk/grid_walk_top.xst" -ofn "/home/chaman/git/CS220/Lab6/Lab6_2/grid_walk/grid_walk_top.syr" 
+xst -intstyle ise -ifn "/home/chaman/git/CS220/Lab6/Lab6_2/grid_walk/grid_walk_top.xst" -ofn "/home/chaman/git/CS220/Lab6/Lab6_2/grid_walk/grid_walk_top.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 grid_walk_top.ngc grid_walk_top.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o grid_walk_top_map.ncd grid_walk_top.ngd grid_walk_top.pcf 
+par -w -intstyle ise -ol high -t 1 grid_walk_top_map.ncd grid_walk_top.ncd grid_walk_top.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml grid_walk_top.twx grid_walk_top.ncd -o grid_walk_top.twr grid_walk_top.pcf 
+bitgen -intstyle ise -f grid_walk_top.ut grid_walk_top.ncd 

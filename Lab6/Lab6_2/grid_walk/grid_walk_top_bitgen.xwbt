@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/chaman/git/CS220/Lab6/Lab6_2/grid_walk/grid_walk_top.ncd
+OUTFILE=/home/chaman/git/CS220/Lab6/Lab6_2/grid_walk/grid_walk_top.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=/home/chaman/git/CS220/Lab6/Lab6_2/grid_walk
+LICENSE=WebPack
+USER_INFO=211671844_0_0_473

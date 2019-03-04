@@ -8,7 +8,7 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;/home/chaman/git/CS220/Lab6/Lab6_2/grid_walk/five_bit_add_subs.v&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;/home/chaman/git/CS220/Lab6/Lab6_2/grid_walk/grid_walk.v&quot; into library work</arg>
 </msg>
 
 </messages>

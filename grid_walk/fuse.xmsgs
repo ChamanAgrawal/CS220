@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="329" delta="unknown" >"/home/chaman/git/CS220/grid_walk/grid_walk.v" Line 30: Target &lt;<arg fmt="%s" index="1">initial_x</arg>&gt; of concurrent assignment or output port connection should be a net type.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="329" delta="unknown" >"/home/chaman/git/CS220/grid_walk/grid_walk.v" Line 31: Target &lt;<arg fmt="%s" index="1">initial_y</arg>&gt; of concurrent assignment or output port connection should be a net type.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="329" delta="unknown" >"/home/chaman/git/CS220/grid_walk/grid_walk.v" Line 37: Target &lt;<arg fmt="%s" index="1">prev_rotation_event</arg>&gt; of concurrent assignment or output port connection should be a net type.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1660" delta="unknown" >"/home/chaman/git/CS220/grid_walk/grid_walk.v" Line 45: Procedural assignment to a non-register <arg fmt="%s" index="1">final_x</arg> is not permitted, left-hand side should be reg/integer/time/genvar
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1660" delta="unknown" >"/home/chaman/git/CS220/grid_walk/grid_walk.v" Line 45: Procedural assignment to a non-register <arg fmt="%s" index="1">final_x</arg> is not permitted, left-hand side should be reg/integer/time/genvar
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1575" delta="unknown" >"/home/chaman/git/CS220/grid_walk/grid_walk.v" Line 48: Instantiation is not allowed in sequential area except checker instantiation
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1660" delta="unknown" >"/home/chaman/git/CS220/grid_walk/grid_walk.v" Line 53: Procedural assignment to a non-register <arg fmt="%s" index="1">final_y</arg> is not permitted, left-hand side should be reg/integer/time/genvar
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1660" delta="unknown" >"/home/chaman/git/CS220/grid_walk/grid_walk.v" Line 53: Procedural assignment to a non-register <arg fmt="%s" index="1">final_y</arg> is not permitted, left-hand side should be reg/integer/time/genvar
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1575" delta="unknown" >"/home/chaman/git/CS220/grid_walk/grid_walk.v" Line 56: Instantiation is not allowed in sequential area except checker instantiation
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1660" delta="unknown" >"/home/chaman/git/CS220/grid_walk/grid_walk.v" Line 60: Procedural assignment to a non-register <arg fmt="%s" index="1">final_x</arg> is not permitted, left-hand side should be reg/integer/time/genvar
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1660" delta="unknown" >"/home/chaman/git/CS220/grid_walk/grid_walk.v" Line 60: Procedural assignment to a non-register <arg fmt="%s" index="1">final_x</arg> is not permitted, left-hand side should be reg/integer/time/genvar
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1660" delta="unknown" >"/home/chaman/git/CS220/grid_walk/grid_walk.v" Line 63: Procedural assignment to a non-register <arg fmt="%s" index="1">final_y</arg> is not permitted, left-hand side should be reg/integer/time/genvar
+</msg>
+
+<msg type="error" file="HDLCompiler" num="1660" delta="unknown" >"/home/chaman/git/CS220/grid_walk/grid_walk.v" Line 63: Procedural assignment to a non-register <arg fmt="%s" index="1">final_y</arg> is not permitted, left-hand side should be reg/integer/time/genvar
+</msg>
+
+<msg type="error" file="HDLCompiler" num="598" delta="unknown" >"/home/chaman/git/CS220/grid_walk/grid_walk.v" Line 21: Module &lt;<arg fmt="%s" index="1">grid_walk</arg>&gt; ignored due to previous errors.
+</msg>
+
+</messages>
+

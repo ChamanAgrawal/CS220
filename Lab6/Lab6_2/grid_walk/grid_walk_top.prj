@@ -1,0 +1,5 @@
+verilog work "full_adder.v"
+verilog work "five_bit_adder.v"
+verilog work "is_rotation.v"
+verilog work "grid_walk.v"
+verilog work "grid_walk_top.v"

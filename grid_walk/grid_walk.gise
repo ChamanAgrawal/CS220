@@ -80,13 +80,14 @@
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputRemoved"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="five_bit_adder.lso"/>
       <outfile xil_pn:name="five_bit_adder.ngc"/>
       <outfile xil_pn:name="five_bit_adder.ngr"/>
       <outfile xil_pn:name="five_bit_adder.prj"/>
-      <outfile xil_pn:name="five_bit_adder.stx"/>
       <outfile xil_pn:name="five_bit_adder.syr"/>
       <outfile xil_pn:name="five_bit_adder.xst"/>
       <outfile xil_pn:name="five_bit_adder_xst.xrpt"/>
