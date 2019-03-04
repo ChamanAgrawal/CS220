@@ -28,6 +28,7 @@ module FSM( clk, Y , state
 	 reg[3:0] dispatch1[0:3];
 	 reg[3:0] dispatch2[0:3];
 	 reg[3:0] initial_st = 4'b0;
+	 reg[30:0] counter = 30'b0; 
 	 initial begin
 		microcode[0] = 3'b0;
 		microcode[1] = 3'b0;
@@ -52,25 +53,31 @@ module FSM( clk, Y , state
 		dispatch2[3] = 4'b1100;
 	end
 	always@(posedge clk) begin
-		if(microcode[initial_st]==0) begin
-			state <= initial_st+1;
-			initial_st <= state;
+		if(counter == 100000000) begin
+			if(microcode[initial_st]==0) begin
+				state <= initial_st+1;
+				initial_st <= state;
+			end
+			else if(microcode[initial_st]==1) begin
+				state <= dispatch1[Y];
+				initial_st <= state;
+			end
+			else if(microcode[initial_st]==2) begin
+				state <= 4'b0111;
+				initial_st <= state;
+			end
+			else if(microcode[initial_st]==3) begin
+				state <= dispatch2[Y];
+				initial_st <= state;
+			end
+			else if(microcode[initial_st]==4) begin
+				state <= 4'b0;
+				initial_st <= state;
 		end
-		else if(microcode[initial_st]==1) begin
-			state <= dispatch1[Y];
-			initial_st <= state;
+			counter <= 30'b0;
 		end
-		else if(microcode[initial_st]==2) begin
-			state <= 4'b0111;
-			initial_st <= state;
-		end
-		else if(microcode[initial_st]==3) begin
-			state <= dispatch2[Y];
-			initial_st <= state;
-		end
-		else if(microcode[initial_st]==4) begin
-			state <= 4'b0;
-			initial_st <= state;
-		end
+		else begin
+			counter <= counter+1;
+		end	
 	end		
 endmodule

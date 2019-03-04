@@ -1,0 +1,38 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+# Start of session at: Mon Mar  4 15:54:13 2019
+# Process ID: 9571
+# Log file: /media/chamanag/8B9E-BFB0/Lab 7/FSM/planAhead_run_1/planAhead.log
+# Journal file: /media/chamanag/8B9E-BFB0/Lab 7/FSM/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {/media/chamanag/8B9E-BFB0/Lab 7/FSM/pa.fromHdl.tcl}
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin F11 [get_ports {state[3]}]
+endgroup
+startgroup
+set_property package_pin E11 [get_ports {state[2]}]
+endgroup
+startgroup
+set_property package_pin E12 [get_ports {state[1]}]
+endgroup
+startgroup
+set_property package_pin F12 [get_ports {state[0]}]
+endgroup
+startgroup
+set_property package_pin L14 [get_ports {Y[1]}]
+endgroup
+startgroup
+set_property package_pin L13 [get_ports {Y[0]}]
+endgroup
+startgroup
+set_property package_pin C9 [get_ports clk]
+endgroup
+set_property iostandard LVTTL [get_ports [list {state[3]} {state[2]} {state[1]} {state[0]}]]
+set_property iostandard LVTTL [get_ports [list {Y[1]} {Y[0]}]]
+set_property iostandard LVCMOS33 [get_ports [list clk]]
+set_property drive 8 [get_ports [list {state[3]} {state[2]} {state[1]} {state[0]}]]
+set_property pulltype PULLUP [get_ports [list {state[3]} {state[2]} {state[1]} {state[0]}]]
+save_constraints
