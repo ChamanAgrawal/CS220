@@ -18,26 +18,42 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module LCD_MIN(Y,PB1,PB2,PB3,PB4, A
+// using the four sliding buttons for taking input
+module LCD_MIN(clk, slide
     );
-input[2:0] Y;
-input PB1;
-input PB2;
-input PB3;
-input PB4;
-output [11:0] A;
-reg[11:0] A;
-always@(posedge PB1) begin
-	A[2:0] <= Y;
+input[3:0] slide;
+input clk;
+reg[2:0] A, B, C, D;
+reg[1:0] counter;
+wire[1:0] minpos;
+
+initial begin
+	counter = 2'b0;
 end
-always@(posedge PB2) begin
-	A[5:3] <= Y;
+
+// using 4th slide to trigger input and the rest three buttons to set input value
+always@(posedge slide[3]) begin
+	if (counter == 0) begin
+		A <= slide[2:0];
+		counter <= counter+1;
+	end
+	else if(counter == 1) begin
+		B <= slide[2:0];
+		counter <= counter+1;
+	end
+	else if(counter == 2) begin
+		C <= slide[2:0];
+		counter <= counter+1;
+	end
+	else if(counter == 3) begin
+		D <= slide[2:0];
+		counter <= counter+1;
+	end
+	else begin
+		counter <= 2'b0;
+	end
 end
-always@(posedge PB3) begin
-	A[8:6] <= Y;
-end
-always@(posedge PB4) begin
-	A[11:9] <= Y;
-end
-	
+
+minimum uut0(A, B, C, D, clk, minpos);
+
 endmodule

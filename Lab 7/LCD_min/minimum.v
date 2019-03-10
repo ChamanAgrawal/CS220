@@ -18,13 +18,26 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module minimum( A, pos
-    );
-input [11:0] A;
-output [1:0] pos;
-wire [1:0] pos;
+module minimum( A, B, C, D, clk, minpos);
 
-integer i;
+input [2:0] A, B, C, D;
+input clk;
+output minpos;
+reg[1:0] minpos;
 
+always @(posedge clk) begin
+	if ((A <= B) && (A <= C) && (A <= D)) begin
+		minpos <= 0;
+	end
+	else if ((B <= A) && (B <= C) && (A <= D)) begin
+		minpos <= 1;
+	end
+	else if ((C <= A) && (C <= B) && (A <= D)) begin
+		minpos <= 2;
+	end
+	else if ((D <= A) && (D <= B) && (D <= C)) begin
+		minpos <= 3;
+	end
+end
 
 endmodule

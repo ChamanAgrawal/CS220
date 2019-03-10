@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.04 secs
+Total CPU time to Xst completion: 0.05 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.04 secs
+Total CPU time to Xst completion: 0.05 secs
  
 --> 
 Reading design: LCD_MIN.prj
@@ -71,7 +71,7 @@ Automatic Register Balancing       : No
 
 ---- Target Options
 Add IO Buffers                     : YES
-Global Maximum Fanout              : 500
+Global Maximum Fanout              : 100000
 Add Generic Clock Buffer(BUFG)     : 24
 Register Duplication               : YES
 Slice Packing                      : YES
@@ -107,7 +107,9 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
+Compiling verilog file "minimum.v" in library work
 Compiling verilog file "LCD_MIN.v" in library work
+Module <minimum> compiled
 Module <LCD_MIN> compiled
 No errors in compilation
 Analysis of file <"LCD_MIN.prj"> succeeded.
@@ -118,12 +120,17 @@ Analysis of file <"LCD_MIN.prj"> succeeded.
 =========================================================================
 Analyzing hierarchy for module <LCD_MIN> in library <work>.
 
+Analyzing hierarchy for module <minimum> in library <work>.
+
 
 =========================================================================
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing top module <LCD_MIN>.
 Module <LCD_MIN> is correct for synthesis.
+ 
+Analyzing module <minimum> in library <work>.
+Module <minimum> is correct for synthesis.
  
 
 =========================================================================
@@ -132,34 +139,77 @@ Module <LCD_MIN> is correct for synthesis.
 
 Performing bidirectional port resolution...
 
+Synthesizing Unit <minimum>.
+    Related source file is "minimum.v".
+    Found 2-bit register for signal <minpos>.
+    Found 3-bit comparator lessequal for signal <minpos$cmp_le0000> created at line 29.
+    Found 3-bit comparator lessequal for signal <minpos$cmp_le0001> created at line 29.
+    Found 3-bit comparator lessequal for signal <minpos$cmp_le0002> created at line 29.
+    Found 3-bit comparator lessequal for signal <minpos$cmp_le0003> created at line 32.
+    Found 3-bit comparator lessequal for signal <minpos$cmp_le0004> created at line 32.
+    Found 3-bit comparator lessequal for signal <minpos$cmp_le0005> created at line 38.
+    Found 3-bit comparator lessequal for signal <minpos$cmp_le0006> created at line 38.
+    Found 3-bit comparator lessequal for signal <minpos$cmp_le0007> created at line 38.
+    Found 3-bit comparator lessequal for signal <minpos$cmp_le0008> created at line 35.
+    Found 3-bit comparator lessequal for signal <minpos$cmp_le0009> created at line 35.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+	inferred  10 Comparator(s).
+Unit <minimum> synthesized.
+
+
 Synthesizing Unit <LCD_MIN>.
     Related source file is "LCD_MIN.v".
-    Found 12-bit register for signal <A>.
+WARNING:Xst:646 - Signal <minpos> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found finite state machine <FSM_0> for signal <counter>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 4                                              |
+    | Inputs             | 0                                              |
+    | Outputs            | 4                                              |
+    | Clock              | slide<3>                  (rising_edge)        |
+    | Power Up State     | 00                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 3-bit register for signal <A>.
+    Found 3-bit register for signal <B>.
+    Found 3-bit register for signal <C>.
+    Found 3-bit register for signal <D>.
     Summary:
+	inferred   1 Finite State Machine(s).
 	inferred  12 D-type flip-flop(s).
 Unit <LCD_MIN> synthesized.
 
+WARNING:Xst:524 - All outputs of the instance <uut0> of the block <minimum> are unconnected in block <LCD_MIN>.
+   This instance will be removed from the design along with all underlying logic
 
 =========================================================================
 HDL Synthesis Report
 
-Macro Statistics
-# Registers                                            : 12
- 1-bit register                                        : 12
-
+Found no macro
 =========================================================================
 
 =========================================================================
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <FSM> on signal <counter[1:4]> with one-hot encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 0001
+ 01    | 0010
+ 10    | 0100
+ 11    | 1000
+-------------------
 
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# Registers                                            : 12
- Flip-Flops                                            : 12
+# FSMs                                                 : 1
 
 =========================================================================
 
@@ -168,6 +218,8 @@ Macro Statistics
 =========================================================================
 
 Optimizing unit <LCD_MIN> ...
+
+Optimizing unit <minimum> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
@@ -178,10 +230,7 @@ Final Macro Processing ...
 =========================================================================
 Final Register Report
 
-Macro Statistics
-# Registers                                            : 12
- Flip-Flops                                            : 12
-
+Found no macro
 =========================================================================
 
 =========================================================================
@@ -206,16 +255,9 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 19
+# IOs                              : 5
 
 Cell Usage :
-# FlipFlops/Latches                : 12
-#      FD                          : 12
-# Clock Buffers                    : 4
-#      BUFGP                       : 4
-# IO Buffers                       : 15
-#      IBUF                        : 3
-#      OBUF                        : 12
 =========================================================================
 
 Device utilization summary:
@@ -224,10 +266,8 @@ Device utilization summary:
 Selected Device : 3s500efg320-4 
 
  Number of Slices:                        0  out of   4656     0%  
- Number of IOs:                          19
- Number of bonded IOBs:                  19  out of    232     8%  
-    IOB Flip Flops:                      12
- Number of GCLKs:                         4  out of     24    16%  
+ Number of IOs:                           5
+ Number of bonded IOBs:                   0  out of    232     0%  
 
 ---------------------------
 Partition Resource Summary:
@@ -247,14 +287,7 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
------------------------------------+------------------------+-------+
-Clock Signal                       | Clock buffer(FF name)  | Load  |
------------------------------------+------------------------+-------+
-PB1                                | BUFGP                  | 3     |
-PB2                                | BUFGP                  | 3     |
-PB3                                | BUFGP                  | 3     |
-PB4                                | BUFGP                  | 3     |
------------------------------------+------------------------+-------+
+No clock signals found in this design
 
 Asynchronous Control Signals Information:
 ----------------------------------------
@@ -265,8 +298,8 @@ Timing Summary:
 Speed Grade: -4
 
    Minimum period: No path found
-   Minimum input arrival time before clock: 2.113ns
-   Maximum output required time after clock: 4.283ns
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
    Maximum combinational path delay: No path found
 
 Timing Detail:
@@ -274,169 +307,17 @@ Timing Detail:
 All values displayed in nanoseconds (ns)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'PB1'
-  Total number of paths / destination ports: 3 / 3
--------------------------------------------------------------------------
-Offset:              2.113ns (Levels of Logic = 1)
-  Source:            Y<0> (PAD)
-  Destination:       A_0 (FF)
-  Destination Clock: PB1 rising
-
-  Data Path: Y<0> to A_0
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             4   1.218   0.587  Y_0_IBUF (Y_0_IBUF)
-     FD:D                      0.308          A_0
-    ----------------------------------------
-    Total                      2.113ns (1.526ns logic, 0.587ns route)
-                                       (72.2% logic, 27.8% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'PB2'
-  Total number of paths / destination ports: 3 / 3
--------------------------------------------------------------------------
-Offset:              2.113ns (Levels of Logic = 1)
-  Source:            Y<0> (PAD)
-  Destination:       A_3 (FF)
-  Destination Clock: PB2 rising
-
-  Data Path: Y<0> to A_3
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             4   1.218   0.587  Y_0_IBUF (Y_0_IBUF)
-     FD:D                      0.308          A_3
-    ----------------------------------------
-    Total                      2.113ns (1.526ns logic, 0.587ns route)
-                                       (72.2% logic, 27.8% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'PB3'
-  Total number of paths / destination ports: 3 / 3
--------------------------------------------------------------------------
-Offset:              2.113ns (Levels of Logic = 1)
-  Source:            Y<0> (PAD)
-  Destination:       A_6 (FF)
-  Destination Clock: PB3 rising
-
-  Data Path: Y<0> to A_6
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             4   1.218   0.587  Y_0_IBUF (Y_0_IBUF)
-     FD:D                      0.308          A_6
-    ----------------------------------------
-    Total                      2.113ns (1.526ns logic, 0.587ns route)
-                                       (72.2% logic, 27.8% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'PB4'
-  Total number of paths / destination ports: 3 / 3
--------------------------------------------------------------------------
-Offset:              2.113ns (Levels of Logic = 1)
-  Source:            Y<0> (PAD)
-  Destination:       A_9 (FF)
-  Destination Clock: PB4 rising
-
-  Data Path: Y<0> to A_9
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             4   1.218   0.587  Y_0_IBUF (Y_0_IBUF)
-     FD:D                      0.308          A_9
-    ----------------------------------------
-    Total                      2.113ns (1.526ns logic, 0.587ns route)
-                                       (72.2% logic, 27.8% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'PB4'
-  Total number of paths / destination ports: 3 / 3
--------------------------------------------------------------------------
-Offset:              4.283ns (Levels of Logic = 1)
-  Source:            A_11 (FF)
-  Destination:       A<11> (PAD)
-  Source Clock:      PB4 rising
-
-  Data Path: A_11 to A<11>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FD:C->Q               1   0.591   0.420  A_11 (A_11)
-     OBUF:I->O                 3.272          A_11_OBUF (A<11>)
-    ----------------------------------------
-    Total                      4.283ns (3.863ns logic, 0.420ns route)
-                                       (90.2% logic, 9.8% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'PB3'
-  Total number of paths / destination ports: 3 / 3
--------------------------------------------------------------------------
-Offset:              4.283ns (Levels of Logic = 1)
-  Source:            A_8 (FF)
-  Destination:       A<8> (PAD)
-  Source Clock:      PB3 rising
-
-  Data Path: A_8 to A<8>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FD:C->Q               1   0.591   0.420  A_8 (A_8)
-     OBUF:I->O                 3.272          A_8_OBUF (A<8>)
-    ----------------------------------------
-    Total                      4.283ns (3.863ns logic, 0.420ns route)
-                                       (90.2% logic, 9.8% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'PB2'
-  Total number of paths / destination ports: 3 / 3
--------------------------------------------------------------------------
-Offset:              4.283ns (Levels of Logic = 1)
-  Source:            A_5 (FF)
-  Destination:       A<5> (PAD)
-  Source Clock:      PB2 rising
-
-  Data Path: A_5 to A<5>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FD:C->Q               1   0.591   0.420  A_5 (A_5)
-     OBUF:I->O                 3.272          A_5_OBUF (A<5>)
-    ----------------------------------------
-    Total                      4.283ns (3.863ns logic, 0.420ns route)
-                                       (90.2% logic, 9.8% route)
-
-=========================================================================
-Timing constraint: Default OFFSET OUT AFTER for Clock 'PB1'
-  Total number of paths / destination ports: 3 / 3
--------------------------------------------------------------------------
-Offset:              4.283ns (Levels of Logic = 1)
-  Source:            A_2 (FF)
-  Destination:       A<2> (PAD)
-  Source Clock:      PB1 rising
-
-  Data Path: A_2 to A<2>
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     FD:C->Q               1   0.591   0.420  A_2 (A_2)
-     OBUF:I->O                 3.272          A_2_OBUF (A<2>)
-    ----------------------------------------
-    Total                      4.283ns (3.863ns logic, 0.420ns route)
-                                       (90.2% logic, 9.8% route)
-
-=========================================================================
 
 
-Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 4.85 secs
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 3.49 secs
  
 --> 
 
 
-Total memory usage is 514364 kilobytes
+Total memory usage is 520088 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

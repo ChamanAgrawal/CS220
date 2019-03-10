@@ -5,5 +5,12 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">minpos</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="524" delta="new" >All outputs of the instance &lt;<arg fmt="%s" index="1">uut0</arg>&gt; of the block &lt;<arg fmt="%s" index="2">minimum</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="3">LCD_MIN</arg>&gt;.
+This instance will be removed from the design along with all underlying logic
+</msg>
+
 </messages>
 
