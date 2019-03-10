@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2019-03-10T12:17:21</DateModified>
+  <DateModified>2019-03-10T23:21:33</DateModified>
   <ModuleName>LCD_MIN</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>/home/chaman/git/CS220/Lab 7/LCD_min/iseconfig/LCD_MIN.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/chaman/git/CS220/Lab 7/LCD_min/</ImplementationReportsDirectory>
+  <SavedFilePath>D:/CS220-master/Lab 7/LCD_min/iseconfig/LCD_MIN.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>D:/CS220-master/Lab 7/LCD_min\</ImplementationReportsDirectory>
   <DateInitialized>2019-03-04T16:16:12</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
