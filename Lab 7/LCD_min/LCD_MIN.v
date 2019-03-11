@@ -26,6 +26,9 @@ input clk;
 reg[2:0] A, B, C, D;
 reg[1:0] counter;
 wire[1:0] minpos;
+wire[7:0] DB;
+wire lcd_rs, lcd_rw, lcd_e;
+wire[3:0] data;
 
 initial begin
 	counter = 2'b0;
@@ -54,6 +57,7 @@ always@(posedge slide[3]) begin
 	end
 end
 
-minimum uut0(A, B, C, D, clk, minpos);
+minimum uut0(A, B, C, D, clk, minpos, DB);
+LCD uut1(DB, clk, lcd_rs, lcd_rw, lcd_e, data);
 
 endmodule

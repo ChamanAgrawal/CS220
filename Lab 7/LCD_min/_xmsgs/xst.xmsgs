@@ -5,11 +5,343 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">minpos</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+<msg type="error" file="HDLCompilers" num="207" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 24 </arg>Signal &apos;<arg fmt="%s" index="2">min</arg>&apos; is not referenced in the module port list
 </msg>
 
-<msg type="warning" file="Xst" num="524" delta="new" >All outputs of the instance &lt;<arg fmt="%s" index="1">uut0</arg>&gt; of the block &lt;<arg fmt="%s" index="2">minimum</arg>&gt; are unconnected in block &lt;<arg fmt="%s" index="3">LCD_MIN</arg>&gt;.
-This instance will be removed from the design along with all underlying logic
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 36 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 39 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 39 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 44 </arg>&apos;<arg fmt="%s" index="2">lcd_w</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 46 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 46 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 51 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 51 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 56 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 56 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 61 </arg>&apos;<arg fmt="%s" index="2">lcd_w</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 63 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 63 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 68 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 68 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 73 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 73 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 78 </arg>&apos;<arg fmt="%s" index="2">lcd_w</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 80 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 80 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 85 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 87 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 93 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 96 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 96 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 101 </arg>&apos;<arg fmt="%s" index="2">lcd_w</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 103 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 103 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 108 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 108 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 113 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 113 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 118 </arg>&apos;<arg fmt="%s" index="2">lcd_w</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 120 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 120 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 125 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 127 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 133 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 136 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 136 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 141 </arg>&apos;<arg fmt="%s" index="2">lcd_w</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 143 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 143 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 148 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 148 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 153 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 153 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 158 </arg>&apos;<arg fmt="%s" index="2">lcd_w</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 160 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 160 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 165 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 167 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 173 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 176 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 176 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 181 </arg>&apos;<arg fmt="%s" index="2">lcd_w</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 183 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 183 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 188 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 188 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 193 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 193 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 198 </arg>&apos;<arg fmt="%s" index="2">lcd_w</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 200 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 200 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 205 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 207 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 213 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 216 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 216 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 221 </arg>&apos;<arg fmt="%s" index="2">lcd_w</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 223 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 223 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 228 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 228 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 233 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 233 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 238 </arg>&apos;<arg fmt="%s" index="2">lcd_w</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 240 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 240 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 245 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 247 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 253 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 256 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 256 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 261 </arg>&apos;<arg fmt="%s" index="2">lcd_w</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 263 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 263 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 268 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 268 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 273 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 273 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 278 </arg>&apos;<arg fmt="%s" index="2">lcd_w</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 280 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 280 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 285 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 287 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 293 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 296 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 296 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 301 </arg>&apos;<arg fmt="%s" index="2">lcd_w</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 303 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 303 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 308 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 308 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 313 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 313 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 318 </arg>&apos;<arg fmt="%s" index="2">lcd_w</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 320 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 320 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 325 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+</msg>
+
+<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 327 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
 </msg>
 
 </messages>

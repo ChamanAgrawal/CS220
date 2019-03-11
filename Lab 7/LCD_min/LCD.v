@@ -18,7 +18,7 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module LCD(DB,clk,lcd_rs,lcd_rw,lcd_e,data
+module LCD(DB, clk, lcd_rs, lcd_rw, lcd_e, data
     );
 
 	input min;
