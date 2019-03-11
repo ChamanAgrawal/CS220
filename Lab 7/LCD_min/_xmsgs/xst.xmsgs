@@ -5,343 +5,230 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="error" file="HDLCompilers" num="207" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 24 </arg>Signal &apos;<arg fmt="%s" index="2">min</arg>&apos; is not referenced in the module port list
+<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">lcd_w</arg>&gt; in unit &lt;<arg fmt="%s" index="2">LCD</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 36 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">lcd_w</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 39 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">lcd_rs</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 39 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">lcd_e</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 44 </arg>&apos;<arg fmt="%s" index="2">lcd_w</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 46 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">minpos</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 46 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">uut0</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
+It will be removed from the design.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 51 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="1426" delta="new" >The value init of the FF/Latch <arg fmt="%s" index="1">FSM_FFd7</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">FSM_1-parent</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">0</arg>.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 51 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="1426" delta="new" >The value init of the FF/Latch <arg fmt="%s" index="1">DB_5</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">minimum</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 56 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="1426" delta="new" >The value init of the FF/Latch <arg fmt="%s" index="1">DB_4</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">minimum</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 56 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">DB_2</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">minimum</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 61 </arg>&apos;<arg fmt="%s" index="2">lcd_w</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">DB_3</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">minimum</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 63 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">DB_6</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">minimum</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 63 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">DB_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">minimum</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 68 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">DB_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">minimum</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;DB_5&gt; </arg>
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 68 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">A_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 73 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">A_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 73 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">A_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 78 </arg>&apos;<arg fmt="%s" index="2">lcd_w</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">D_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 80 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">D_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 80 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">D_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 85 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">B_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 87 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">B_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 93 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">B_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 96 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">C_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 96 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">C_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 101 </arg>&apos;<arg fmt="%s" index="2">lcd_w</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">C_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 103 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">counter_FSM_FFd4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 103 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">counter_FSM_FFd3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 108 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">counter_FSM_FFd2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 108 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">counter_FSM_FFd1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 113 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/lcd_e</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 113 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/counter_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 118 </arg>&apos;<arg fmt="%s" index="2">lcd_w</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/counter_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 120 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/counter_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 120 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/counter_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 125 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/counter_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 127 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/counter_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 133 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/counter_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 136 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/counter_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 136 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/counter_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 141 </arg>&apos;<arg fmt="%s" index="2">lcd_w</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/counter_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 143 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/counter_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 143 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/counter_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 148 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/counter_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 148 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/counter_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 153 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/counter_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 153 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/counter_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 158 </arg>&apos;<arg fmt="%s" index="2">lcd_w</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/counter_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 160 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/counter_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 160 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/counter_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 165 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/counter_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 167 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/counter_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 173 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/lcd_rs</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 176 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/data_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 176 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/data_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 181 </arg>&apos;<arg fmt="%s" index="2">lcd_w</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/data_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 183 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/data_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 183 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/state_FSM_FFd1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 188 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/state_FSM_FFd7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 188 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/state_FSM_FFd6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 193 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/state_FSM_FFd5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 193 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/state_FSM_FFd4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 198 </arg>&apos;<arg fmt="%s" index="2">lcd_w</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/state_FSM_FFd3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 200 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/state_FSM_FFd2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 200 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/step_FSM_FFd1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 205 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/step_FSM_FFd2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 207 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/step_FSM_FFd3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 213 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/step_FSM_FFd4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 216 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/DB_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 216 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/DB_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 221 </arg>&apos;<arg fmt="%s" index="2">lcd_w</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/DB_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 223 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/minpos_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
 </msg>
 
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 223 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
-</msg>
-
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 228 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
-</msg>
-
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 228 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
-</msg>
-
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 233 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
-</msg>
-
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 233 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
-</msg>
-
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 238 </arg>&apos;<arg fmt="%s" index="2">lcd_w</arg>&apos; has not been declared
-</msg>
-
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 240 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
-</msg>
-
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 240 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
-</msg>
-
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 245 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
-</msg>
-
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 247 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
-</msg>
-
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 253 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
-</msg>
-
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 256 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
-</msg>
-
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 256 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
-</msg>
-
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 261 </arg>&apos;<arg fmt="%s" index="2">lcd_w</arg>&apos; has not been declared
-</msg>
-
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 263 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
-</msg>
-
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 263 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
-</msg>
-
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 268 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
-</msg>
-
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 268 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
-</msg>
-
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 273 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
-</msg>
-
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 273 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
-</msg>
-
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 278 </arg>&apos;<arg fmt="%s" index="2">lcd_w</arg>&apos; has not been declared
-</msg>
-
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 280 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
-</msg>
-
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 280 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
-</msg>
-
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 285 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
-</msg>
-
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 287 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
-</msg>
-
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 293 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
-</msg>
-
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 296 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
-</msg>
-
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 296 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
-</msg>
-
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 301 </arg>&apos;<arg fmt="%s" index="2">lcd_w</arg>&apos; has not been declared
-</msg>
-
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 303 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
-</msg>
-
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 303 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
-</msg>
-
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 308 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
-</msg>
-
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 308 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
-</msg>
-
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 313 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
-</msg>
-
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 313 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
-</msg>
-
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 318 </arg>&apos;<arg fmt="%s" index="2">lcd_w</arg>&apos; has not been declared
-</msg>
-
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 320 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
-</msg>
-
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 320 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
-</msg>
-
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 325 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
-</msg>
-
-<msg type="error" file="HDLCompilers" num="28" delta="new" ><arg fmt="%s" index="1">&quot;LCD.v&quot; line 327 </arg>&apos;<arg fmt="%s" index="2">step</arg>&apos; has not been declared
+<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/minpos_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
 </msg>
 
 </messages>

@@ -18,13 +18,15 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module minimum( A, B, C, D, clk, minpos, DB);
+module minimum( A, B, C, D, clk, minpos);
 
 input [2:0] A, B, C, D;
 input clk;
-output minpos, DB;
+output minpos;
 reg[1:0] minpos;
 reg[7:0] DB = 8'b0;
+wire lcd_rs,lcd_w,lcd_e;
+wire[3:0] data;
 always @(posedge clk) begin
 	if ((A <= B) && (A <= C) && (A <= D)) begin
 		minpos <= 0;
@@ -43,4 +45,5 @@ always @(posedge clk) begin
 		DB <= 8'b00110011;
 	end
 end
+	LCD uut0(DB,clk,lcd_rs,lcd_w,lcd_e,data);
 endmodule

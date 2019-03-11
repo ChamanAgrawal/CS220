@@ -18,17 +18,17 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module LCD(DB, clk, lcd_rs, lcd_rw, lcd_e, data
+module LCD(DB,clk,lcd_rs,lcd_w,lcd_e,data
     );
 
-	input min;
 	input[7:0] DB;
 	input clk;
-	output lcd_rs,lcd_rw,lcd_e,data;
-	reg lcd_rs, lcd_rw, lcd_e;
+	output lcd_rs,lcd_w,lcd_e,data;
+	reg lcd_rs, lcd_w, lcd_e;
 	reg[3:0] data;
 	reg[20:0] counter = 21'b0;
 	reg[3:0] state = 4'b0; 
+	reg[3:0] step = 4'b0;
 	always@(posedge clk) begin
 		if(counter == 2000000) begin
 			case(state)
