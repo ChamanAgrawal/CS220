@@ -5,7 +5,7 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="NgdBuild" num="578" delta="new" >Design contains no instances.
+<msg type="info" file="ConstraintSystem" num="0" >The Period constraint &lt;NET &quot;clk&quot; PERIOD = 20 ns HIGH 50 %;&gt; [LCD_MIN.ucf(27)], is specified using the Net Period method which is not recommended. Please use the Timespec PERIOD method.
 </msg>
 
 </messages>

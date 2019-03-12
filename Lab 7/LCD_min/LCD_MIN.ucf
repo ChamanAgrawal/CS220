@@ -1,0 +1,91 @@
+
+
+NET "lcd_e" LOC = M18;
+NET "lcd_rs" LOC = L18;
+NET "clk" LOC = C9;
+
+
+NET "clk" IOSTANDARD = LVCMOS33;
+NET "lcd_e" IOSTANDARD = LVCMOS33;
+NET "lcd_rs" IOSTANDARD = LVCMOS33;
+NET "lcd_e" DRIVE = 4;
+NET "lcd_rs" DRIVE = 4;
+
+
+NET "slide[0]" LOC = L13;
+NET "slide[1]" LOC = L14;
+NET "slide[2]" LOC = H18;
+
+
+NET "slide[2]" IOSTANDARD = LVTTL;
+NET "slide[1]" IOSTANDARD = LVTTL;
+NET "slide[0]" IOSTANDARD = LVTTL;
+NET "slide[2]" PULLUP;
+NET "slide[1]" PULLUP;
+NET "slide[0]" PULLUP;
+
+NET "clk" PERIOD = 20 ns HIGH 50 %;
+
+
+NET "minpos[1]" LOC = E12;
+NET "minpos[0]" LOC = F12;
+
+
+NET "minpos[1]" IOSTANDARD = LVTTL;
+NET "minpos[0]" IOSTANDARD = LVTTL;
+NET "minpos[1]" DRIVE = 8;
+NET "minpos[0]" DRIVE = 8;
+
+
+NET "PB1" LOC = K17;
+
+
+NET "PB1" IOSTANDARD = LVTTL;
+NET "PB1" PULLDOWN;
+
+
+
+NET "PB2" LOC = D18;
+NET "PB3" LOC = V4;
+NET "PB4" LOC = H13;
+
+
+NET "PB2" IOSTANDARD = LVTTL;
+NET "PB3" IOSTANDARD = LVTTL;
+NET "PB4" IOSTANDARD = LVTTL;
+NET "PB2" PULLDOWN;
+NET "PB3" PULLDOWN;
+NET "PB4" PULLDOWN;
+
+
+NET "PB1" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "PB2" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "PB3" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "PB4" CLOCK_DEDICATED_ROUTE = FALSE;
+
+# PlanAhead Generated physical constraints 
+
+NET "lcd_rw" LOC = L17;
+
+# PlanAhead Generated IO constraints 
+
+NET "lcd_rw" IOSTANDARD = LVCMOS33;
+NET "lcd_rw" DRIVE = 4;
+
+# PlanAhead Generated physical constraints 
+
+NET "lcd4" LOC = R15;
+NET "lcd5" LOC = R16;
+NET "lcd6" LOC = P17;
+NET "lcd7" LOC = M15;
+
+# PlanAhead Generated IO constraints 
+
+NET "lcd4" IOSTANDARD = LVCMOS33;
+NET "lcd5" IOSTANDARD = LVCMOS33;
+NET "lcd6" IOSTANDARD = LVCMOS33;
+NET "lcd7" IOSTANDARD = LVCMOS33;
+NET "lcd4" DRIVE = 4;
+NET "lcd5" DRIVE = 4;
+NET "lcd6" DRIVE = 4;
+NET "lcd7" DRIVE = 4;

@@ -5,230 +5,123 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="info" file="Xst" num="2679" delta="new" >Register &lt;<arg fmt="%s" index="1">lcd_w</arg>&gt; in unit &lt;<arg fmt="%s" index="2">LCD</arg>&gt; has a constant value of <arg fmt="%s" index="3">0</arg> during circuit operation. The register is replaced by logic.
+<msg type="warning" file="Xst" num="1643" delta="old" >&quot;<arg fmt="%s" index="1">LCD_MIN.v</arg>&quot; line <arg fmt="%d" index="2">41</arg>: You are giving the signal <arg fmt="%s" index="3">flag</arg> a default value. <arg fmt="%s" index="4">flag</arg> already had a default value, which will be overridden by this one.
 </msg>
 
-<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">lcd_w</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1643" delta="old" >&quot;<arg fmt="%s" index="1">LCD.v</arg>&quot; line <arg fmt="%d" index="2">59</arg>: You are giving the signal <arg fmt="%s" index="3">counter</arg> a default value. <arg fmt="%s" index="4">counter</arg> already had a default value, which will be overridden by this one.
 </msg>
 
-<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">lcd_rs</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1643" delta="old" >&quot;<arg fmt="%s" index="1">LCD.v</arg>&quot; line <arg fmt="%d" index="2">53</arg>: You are giving the signal <arg fmt="%s" index="3">first_line_index</arg> a default value. <arg fmt="%s" index="4">first_line_index</arg> already had a default value, which will be overridden by this one.
 </msg>
 
-<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">lcd_e</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1643" delta="old" >&quot;<arg fmt="%s" index="1">LCD.v</arg>&quot; line <arg fmt="%d" index="2">54</arg>: You are giving the signal <arg fmt="%s" index="3">first_line_state</arg> a default value. <arg fmt="%s" index="4">first_line_state</arg> already had a default value, which will be overridden by this one.
 </msg>
 
-<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">data</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1643" delta="old" >&quot;<arg fmt="%s" index="1">LCD.v</arg>&quot; line <arg fmt="%d" index="2">62</arg>: You are giving the signal <arg fmt="%s" index="3">line_break_state</arg> a default value. <arg fmt="%s" index="4">line_break_state</arg> already had a default value, which will be overridden by this one.
 </msg>
 
-<msg type="warning" file="Xst" num="646" delta="new" >Signal &lt;<arg fmt="%s" index="1">minpos</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1643" delta="old" >&quot;<arg fmt="%s" index="1">LCD.v</arg>&quot; line <arg fmt="%d" index="2">60</arg>: You are giving the signal <arg fmt="%s" index="3">next_state</arg> a default value. <arg fmt="%s" index="4">next_state</arg> already had a default value, which will be overridden by this one.
 </msg>
 
-<msg type="warning" file="Xst" num="1290" delta="new" >Hierarchical block &lt;<arg fmt="%s" index="1">uut0</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
-It will be removed from the design.
+<msg type="warning" file="Xst" num="1643" delta="old" >&quot;<arg fmt="%s" index="1">LCD.v</arg>&quot; line <arg fmt="%d" index="2">56</arg>: You are giving the signal <arg fmt="%s" index="3">second_line_index</arg> a default value. <arg fmt="%s" index="4">second_line_index</arg> already had a default value, which will be overridden by this one.
 </msg>
 
-<msg type="warning" file="Xst" num="1426" delta="new" >The value init of the FF/Latch <arg fmt="%s" index="1">FSM_FFd7</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">FSM_1-parent</arg>.
-You should achieve better results by setting this init to <arg fmt="%i" index="3">0</arg>.
+<msg type="warning" file="Xst" num="1643" delta="old" >&quot;<arg fmt="%s" index="1">LCD.v</arg>&quot; line <arg fmt="%d" index="2">57</arg>: You are giving the signal <arg fmt="%s" index="3">second_line_state</arg> a default value. <arg fmt="%s" index="4">second_line_state</arg> already had a default value, which will be overridden by this one.
 </msg>
 
-<msg type="warning" file="Xst" num="1426" delta="new" >The value init of the FF/Latch <arg fmt="%s" index="1">DB_5</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">minimum</arg>.
+<msg type="warning" file="Xst" num="1781" delta="old" >Signal &lt;<arg fmt="%s" index="1">init_ROM</arg>&gt; is used but never assigned. Tied to default value.
+</msg>
+
+<msg type="warning" file="Xst" num="1780" delta="old" >Signal &lt;<arg fmt="%s" index="1">counter</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">DB_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">uut0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;DB_3&gt; &lt;DB_6&gt; &lt;DB_7&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">DB_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">uut0</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;DB_5&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="old" >The value init of the FF/Latch <arg fmt="%s" index="1">flag</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">LCD_MIN</arg>.
 You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="1426" delta="new" >The value init of the FF/Latch <arg fmt="%s" index="1">DB_4</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">minimum</arg>.
+<msg type="warning" file="Xst" num="1426" delta="new" >The value init of the FF/Latch <arg fmt="%s" index="1">DB_4</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">uut0</arg>.
 You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">DB_2</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">minimum</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1293" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">DB_2</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">uut0</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">DB_3</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">minimum</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">lines1_127</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">LCD_MIN</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">DB_6</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">minimum</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">lines1_126</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">LCD_MIN</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="1896" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">DB_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">minimum</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">lines1_122</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">LCD_MIN</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">DB_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">minimum</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;DB_5&gt; </arg>
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">lines1_123</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">LCD_MIN</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">A_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
+<msg type="info" file="Xst" num="3034" delta="old" >In order to maximize performance and save block RAM resources, the small ROM &lt;<arg fmt="%s" index="1">Mrom__AUX_1</arg>&gt; will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">A_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
+<msg type="warning" file="Xst" num="1426" delta="old" >The value init of the FF/Latch <arg fmt="%s" index="1">DB_5</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">minimum</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">A_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
+<msg type="warning" file="Xst" num="1426" delta="old" >The value init of the FF/Latch <arg fmt="%s" index="1">DB_4</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">minimum</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">D_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">DB_2</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">minimum</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">D_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">DB_3</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">minimum</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">D_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">DB_6</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">minimum</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">B_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">DB_7</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">minimum</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">B_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
+<msg type="warning" file="Xst" num="1426" delta="old" >The value init of the FF/Latch <arg fmt="%s" index="1">flag</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">LCD_MIN</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">B_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">DB_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">minimum</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;DB_5&gt; </arg>
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">C_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
+<msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">lcd_rw</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">LCD</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">C_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
+<msg type="warning" file="Xst" num="1293" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">first_line_index_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">LCD</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">C_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">first_line_index_1</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">LCD</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">counter_FSM_FFd4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">second_line_index_0</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">LCD</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">counter_FSM_FFd3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
+<msg type="warning" file="Xst" num="1896" delta="old" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">second_line_index_1</arg>&gt; has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">LCD</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">counter_FSM_FFd2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">lines1_127</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">LCD_MIN</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">counter_FSM_FFd1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">lines1_126</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">LCD_MIN</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/lcd_e</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">lines1_122</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">LCD_MIN</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/counter_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
+<msg type="warning" file="Xst" num="1895" delta="new" >Due to other FF/Latch trimming, FF/Latch &lt;<arg fmt="%s" index="1">lines1_123</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">LCD_MIN</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
 </msg>
 
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/counter_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/counter_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/counter_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/counter_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/counter_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/counter_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/counter_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/counter_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/counter_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/counter_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/counter_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/counter_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/counter_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/counter_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/counter_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/counter_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/counter_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/counter_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/counter_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/counter_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/lcd_rs</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/data_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/data_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/data_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/data_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/state_FSM_FFd1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/state_FSM_FFd7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/state_FSM_FFd6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/state_FSM_FFd5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/state_FSM_FFd4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/state_FSM_FFd3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/state_FSM_FFd2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/step_FSM_FFd1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/step_FSM_FFd2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/step_FSM_FFd3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/uut0/step_FSM_FFd4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/DB_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/DB_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/DB_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/minpos_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
-</msg>
-
-<msg type="warning" file="Xst" num="2677" delta="new" >Node &lt;<arg fmt="%s" index="1">uut0/minpos_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt;.
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">lines1_125</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">LCD_MIN</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;lines1_124&gt; </arg>
 </msg>
 
 </messages>

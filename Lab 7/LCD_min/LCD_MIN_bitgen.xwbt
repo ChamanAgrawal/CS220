@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/chaman/git/CS220/Lab 7/LCD_min/LCD_MIN.ncd
+OUTFILE=/home/chaman/git/CS220/Lab 7/LCD_min/LCD_MIN.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=/home/chaman/git/CS220/Lab 7/LCD_min
+LICENSE=WebPack
+USER_INFO=211671844_0_0_473

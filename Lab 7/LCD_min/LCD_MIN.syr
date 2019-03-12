@@ -1,18 +1,21 @@
-Release 14.7 - xst P.20131013 (nt64)
+Release 14.7 - xst P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
---> Parameter TMPDIR set to xst/projnav.tmp
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.15 secs
+Total CPU time to Xst completion: 0.05 secs
  
---> Parameter xsthdpdir set to xst
+--> 
+Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.15 secs
+Total CPU time to Xst completion: 0.05 secs
  
---> Reading design: LCD_MIN.prj
+--> 
+Reading design: LCD_MIN.prj
 
 TABLE OF CONTENTS
   1) Synthesis Options Summary
@@ -104,11 +107,11 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling verilog file "LCD.v" in library work
 Compiling verilog file "minimum.v" in library work
-Module <LCD> compiled
-Compiling verilog file "LCD_MIN.v" in library work
+Compiling verilog file "LCD.v" in library work
 Module <minimum> compiled
+Compiling verilog file "LCD_MIN.v" in library work
+Module <LCD> compiled
 Module <LCD_MIN> compiled
 No errors in compilation
 Analysis of file <"LCD_MIN.prj"> succeeded.
@@ -128,12 +131,20 @@ Analyzing hierarchy for module <LCD> in library <work>.
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing top module <LCD_MIN>.
+WARNING:Xst:1643 - "LCD_MIN.v" line 41: You are giving the signal flag a default value. flag already had a default value, which will be overridden by this one.
 Module <LCD_MIN> is correct for synthesis.
  
 Analyzing module <minimum> in library <work>.
 Module <minimum> is correct for synthesis.
  
 Analyzing module <LCD> in library <work>.
+WARNING:Xst:1643 - "LCD.v" line 59: You are giving the signal counter a default value. counter already had a default value, which will be overridden by this one.
+WARNING:Xst:1643 - "LCD.v" line 53: You are giving the signal first_line_index a default value. first_line_index already had a default value, which will be overridden by this one.
+WARNING:Xst:1643 - "LCD.v" line 54: You are giving the signal first_line_state a default value. first_line_state already had a default value, which will be overridden by this one.
+WARNING:Xst:1643 - "LCD.v" line 62: You are giving the signal line_break_state a default value. line_break_state already had a default value, which will be overridden by this one.
+WARNING:Xst:1643 - "LCD.v" line 60: You are giving the signal next_state a default value. next_state already had a default value, which will be overridden by this one.
+WARNING:Xst:1643 - "LCD.v" line 56: You are giving the signal second_line_index a default value. second_line_index already had a default value, which will be overridden by this one.
+WARNING:Xst:1643 - "LCD.v" line 57: You are giving the signal second_line_state a default value. second_line_state already had a default value, which will be overridden by this one.
 Module <LCD> is correct for synthesis.
  
 
@@ -142,91 +153,120 @@ Module <LCD> is correct for synthesis.
 =========================================================================
 
 Performing bidirectional port resolution...
-INFO:Xst:2679 - Register <lcd_w> in unit <LCD> has a constant value of 0 during circuit operation. The register is replaced by logic.
-
-Synthesizing Unit <LCD>.
-    Related source file is "LCD.v".
-    Found finite state machine <FSM_0> for signal <step>.
-    -----------------------------------------------------------------------
-    | States             | 9                                              |
-    | Transitions        | 72                                             |
-    | Inputs             | 7                                              |
-    | Outputs            | 9                                              |
-    | Clock              | clk                       (rising_edge)        |
-    | Clock enable       | step$cmp_eq0000           (positive)           |
-    | Power Up State     | 0000                                           |
-    | Encoding           | automatic                                      |
-    | Implementation     | LUT                                            |
-    -----------------------------------------------------------------------
-    Found finite state machine <FSM_1> for signal <state>.
-    -----------------------------------------------------------------------
-    | States             | 7                                              |
-    | Transitions        | 7                                              |
-    | Inputs             | 0                                              |
-    | Outputs            | 7                                              |
-    | Clock              | clk                       (rising_edge)        |
-    | Clock enable       | step$cmp_eq0000           (positive)           |
-    | Power Up State     | 0000                                           |
-    | Encoding           | automatic                                      |
-    | Implementation     | LUT                                            |
-    -----------------------------------------------------------------------
-    Found 1-bit register for signal <lcd_e>.
-    Found 1-bit register for signal <lcd_rs>.
-    Found 4-bit register for signal <data>.
-    Found 21-bit register for signal <counter>.
-    Found 21-bit adder for signal <counter$addsub0000> created at line 334.
-    Summary:
-	inferred   2 Finite State Machine(s).
-	inferred  27 D-type flip-flop(s).
-	inferred   1 Adder/Subtractor(s).
-Unit <LCD> synthesized.
-
 
 Synthesizing Unit <minimum>.
     Related source file is "minimum.v".
-WARNING:Xst:646 - Signal <lcd_w> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:646 - Signal <lcd_rs> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:646 - Signal <lcd_e> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:646 - Signal <data> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-    Found 2-bit register for signal <minpos>.
     Found 8-bit register for signal <DB>.
-    Found 3-bit comparator lessequal for signal <minpos$cmp_le0000> created at line 31.
-    Found 3-bit comparator lessequal for signal <minpos$cmp_le0001> created at line 31.
-    Found 3-bit comparator lessequal for signal <minpos$cmp_le0002> created at line 31.
-    Found 3-bit comparator lessequal for signal <minpos$cmp_le0003> created at line 35.
-    Found 3-bit comparator lessequal for signal <minpos$cmp_le0004> created at line 35.
-    Found 3-bit comparator lessequal for signal <minpos$cmp_le0005> created at line 43.
-    Found 3-bit comparator lessequal for signal <minpos$cmp_le0006> created at line 43.
-    Found 3-bit comparator lessequal for signal <minpos$cmp_le0007> created at line 43.
-    Found 3-bit comparator lessequal for signal <minpos$cmp_le0008> created at line 39.
-    Found 3-bit comparator lessequal for signal <minpos$cmp_le0009> created at line 39.
+    Found 2-bit register for signal <minpos>.
+    Found 3-bit comparator lessequal for signal <DB$cmp_le0000> created at line 36.
+    Found 3-bit comparator lessequal for signal <DB$cmp_le0001> created at line 36.
+    Found 3-bit comparator lessequal for signal <DB$cmp_le0002> created at line 36.
+    Found 3-bit comparator lessequal for signal <DB$cmp_le0003> created at line 48.
+    Found 3-bit comparator lessequal for signal <DB$cmp_le0004> created at line 48.
+    Found 3-bit comparator lessequal for signal <DB$cmp_le0005> created at line 48.
+    Found 3-bit comparator lessequal for signal <DB$cmp_le0006> created at line 44.
+    Found 3-bit comparator lessequal for signal <DB$cmp_le0007> created at line 44.
+    Found 3-bit comparator lessequal for signal <DB$cmp_le0008> created at line 44.
+    Found 3-bit comparator lessequal for signal <DB$cmp_le0009> created at line 40.
+    Found 3-bit comparator lessequal for signal <DB$cmp_le0010> created at line 40.
+    Found 3-bit comparator lessequal for signal <DB$cmp_le0011> created at line 40.
     Summary:
 	inferred  10 D-type flip-flop(s).
-	inferred  10 Comparator(s).
+	inferred  12 Comparator(s).
 Unit <minimum> synthesized.
+
+
+Synthesizing Unit <LCD>.
+    Related source file is "LCD.v".
+WARNING:Xst:1781 - Signal <init_ROM> is used but never assigned. Tied to default value.
+    Found finite state machine <FSM_0> for signal <next_state>.
+    -----------------------------------------------------------------------
+    | States             | 5                                              |
+    | Transitions        | 25                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 8                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Clock enable       | next_state$not0000        (positive)           |
+    | Power Up State     | 000                                            |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_1> for signal <first_line_state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 34                                             |
+    | Inputs             | 5                                              |
+    | Outputs            | 7                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Clock enable       | first_line_state$not0000  (positive)           |
+    | Power Up State     | 11                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_2> for signal <line_break_state>.
+    -----------------------------------------------------------------------
+    | States             | 7                                              |
+    | Transitions        | 29                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 13                                             |
+    | Clock              | clk                       (rising_edge)        |
+    | Clock enable       | line_break_state$not0000  (positive)           |
+    | Power Up State     | 111                                            |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_3> for signal <second_line_state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 36                                             |
+    | Inputs             | 11                                             |
+    | Outputs            | 7                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Clock enable       | second_line_state$not0000 (positive)           |
+    | Power Up State     | 11                                             |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 14x6-bit ROM for signal <$AUX_1>.
+    Found 1-bit register for signal <lcd_e>.
+    Found 1-bit register for signal <lcd_rs>.
+    Found 1-bit register for signal <lcd_rw>.
+    Found 1-bit register for signal <lcd4>.
+    Found 1-bit register for signal <lcd5>.
+    Found 1-bit register for signal <lcd6>.
+    Found 1-bit register for signal <lcd7>.
+    Found 20-bit down counter for signal <counter>.
+    Found 8-bit register for signal <first_line_index>.
+    Found 8-bit adder for signal <first_line_index$addsub0000> created at line 122.
+    Found 4-bit register for signal <init_ROM_index>.
+    Found 4-bit adder for signal <init_ROM_index$addsub0000> created at line 96.
+    Found 8-bit register for signal <second_line_index>.
+    Found 8-bit adder for signal <second_line_index$addsub0000> created at line 183.
+    Summary:
+	inferred   4 Finite State Machine(s).
+	inferred   1 ROM(s).
+	inferred   1 Counter(s).
+	inferred  27 D-type flip-flop(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred   8 Multiplexer(s).
+Unit <LCD> synthesized.
 
 
 Synthesizing Unit <LCD_MIN>.
     Related source file is "LCD_MIN.v".
-WARNING:Xst:646 - Signal <minpos> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
-    Found finite state machine <FSM_2> for signal <counter>.
-    -----------------------------------------------------------------------
-    | States             | 4                                              |
-    | Transitions        | 4                                              |
-    | Inputs             | 0                                              |
-    | Outputs            | 4                                              |
-    | Clock              | slide<3>                  (rising_edge)        |
-    | Power Up State     | 00                                             |
-    | Encoding           | automatic                                      |
-    | Implementation     | LUT                                            |
-    -----------------------------------------------------------------------
+WARNING:Xst:1780 - Signal <counter> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
     Found 3-bit register for signal <A>.
     Found 3-bit register for signal <B>.
     Found 3-bit register for signal <C>.
     Found 3-bit register for signal <D>.
+    Found 1-bit register for signal <flag>.
+    Found 3-bit register for signal <lines<122:120>>.
+    Found 3-bit register for signal <lines<98:96>>.
+    Found 3-bit register for signal <lines<74:72>>.
+    Found 3-bit register for signal <lines<50:48>>.
+    Found 8-bit register for signal <lines1<127:120>>.
     Summary:
-	inferred   1 Finite State Machine(s).
-	inferred  12 D-type flip-flop(s).
+	inferred  33 D-type flip-flop(s).
 Unit <LCD_MIN> synthesized.
 
 
@@ -234,17 +274,26 @@ Unit <LCD_MIN> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# Adders/Subtractors                                   : 1
- 21-bit adder                                          : 1
-# Registers                                            : 10
- 1-bit register                                        : 2
+# ROMs                                                 : 1
+ 14x6-bit ROM                                          : 1
+# Adders/Subtractors                                   : 3
+ 4-bit adder                                           : 1
+ 8-bit adder                                           : 2
+# Counters                                             : 1
+ 20-bit down counter                                   : 1
+# Registers                                            : 37
+ 1-bit register                                        : 28
  2-bit register                                        : 1
- 21-bit register                                       : 1
  3-bit register                                        : 4
  4-bit register                                        : 1
- 8-bit register                                        : 1
-# Comparators                                          : 10
- 3-bit comparator lessequal                            : 10
+ 8-bit register                                        : 3
+# Comparators                                          : 12
+ 3-bit comparator lessequal                            : 12
+# Multiplexers                                         : 8
+ 1-bit 125-to-1 multiplexer                            : 2
+ 1-bit 126-to-1 multiplexer                            : 2
+ 1-bit 127-to-1 multiplexer                            : 2
+ 1-bit 128-to-1 multiplexer                            : 2
 
 =========================================================================
 
@@ -252,66 +301,93 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
-Analyzing FSM <FSM_2> for best encoding.
-Optimizing FSM <counter/FSM> on signal <counter[1:4]> with one-hot encoding.
+Analyzing FSM <FSM_3> for best encoding.
+Optimizing FSM <uut1/second_line_state/FSM> on signal <second_line_state[1:2]> with sequential encoding.
 -------------------
  State | Encoding
 -------------------
- 00    | 0001
- 01    | 0010
- 10    | 0100
- 11    | 1000
+ 00    | 01
+ 01    | 10
+ 10    | 11
+ 11    | 00
+-------------------
+Analyzing FSM <FSM_2> for best encoding.
+Optimizing FSM <uut1/line_break_state/FSM> on signal <line_break_state[1:7]> with one-hot encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 0000010
+ 001   | 0000100
+ 010   | 0001000
+ 011   | 0010000
+ 100   | 0100000
+ 101   | 1000000
+ 111   | 0000001
 -------------------
 Analyzing FSM <FSM_1> for best encoding.
-Optimizing FSM <uut0/uut0/state/FSM> on signal <state[1:7]> with one-hot encoding.
+Optimizing FSM <uut1/first_line_state/FSM> on signal <first_line_state[1:2]> with sequential encoding.
 -------------------
  State | Encoding
 -------------------
- 0000  | 0000001
- 0001  | 0000010
- 0010  | 0000100
- 0011  | 0001000
- 0100  | 0010000
- 0101  | 0100000
- 0110  | 1000000
+ 00    | 01
+ 01    | 10
+ 10    | 11
+ 11    | 00
 -------------------
 Analyzing FSM <FSM_0> for best encoding.
-Optimizing FSM <uut0/uut0/step/FSM> on signal <step[1:4]> with gray encoding.
+Optimizing FSM <uut1/next_state/FSM> on signal <next_state[1:5]> with one-hot encoding.
 -------------------
  State | Encoding
 -------------------
- 0000  | 0000
- 0001  | 0001
- 0010  | 0011
- 0011  | 0010
- 0100  | 0110
- 0101  | 0111
- 0110  | 0101
- 0111  | 0100
- 1000  | 1100
+ 000   | 00001
+ 001   | 00100
+ 010   | 01000
+ 011   | 10000
+ 100   | 00010
 -------------------
-WARNING:Xst:1290 - Hierarchical block <uut0> is unconnected in block <LCD_MIN>.
-   It will be removed from the design.
+INFO:Xst:2261 - The FF/Latch <DB_2> in Unit <uut0> is equivalent to the following 3 FFs/Latches, which will be removed : <DB_3> <DB_6> <DB_7> 
+INFO:Xst:2261 - The FF/Latch <DB_4> in Unit <uut0> is equivalent to the following FF/Latch, which will be removed : <DB_5> 
+WARNING:Xst:1426 - The value init of the FF/Latch flag hinder the constant cleaning in the block LCD_MIN.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1426 - The value init of the FF/Latch DB_4 hinder the constant cleaning in the block uut0.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:1293 - FF/Latch <DB_2> has a constant value of 0 in block <uut0>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <lines1_127> (without init value) has a constant value of 0 in block <LCD_MIN>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <lines1_126> (without init value) has a constant value of 0 in block <LCD_MIN>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <lines1_122> (without init value) has a constant value of 0 in block <LCD_MIN>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <lines1_123> (without init value) has a constant value of 0 in block <LCD_MIN>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <LCD>.
+INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom__AUX_1> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+Unit <LCD> synthesized (advanced).
 
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
-# FSMs                                                 : 3
-# Adders/Subtractors                                   : 1
- 21-bit adder                                          : 1
-# Registers                                            : 49
- Flip-Flops                                            : 49
-# Comparators                                          : 10
- 3-bit comparator lessequal                            : 10
+# FSMs                                                 : 4
+# ROMs                                                 : 1
+ 14x6-bit ROM                                          : 1
+# Adders/Subtractors                                   : 3
+ 4-bit adder                                           : 1
+ 8-bit adder                                           : 2
+# Counters                                             : 1
+ 20-bit down counter                                   : 1
+# Registers                                            : 70
+ Flip-Flops                                            : 70
+# Comparators                                          : 12
+ 3-bit comparator lessequal                            : 12
+# Multiplexers                                         : 8
+ 1-bit 125-to-1 multiplexer                            : 2
+ 1-bit 126-to-1 multiplexer                            : 2
+ 1-bit 127-to-1 multiplexer                            : 2
+ 1-bit 128-to-1 multiplexer                            : 2
 
 =========================================================================
 
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:1426 - The value init of the FF/Latch FSM_FFd7 hinder the constant cleaning in the block FSM_1-parent.
-   You should achieve better results by setting this init to 0.
 WARNING:Xst:1426 - The value init of the FF/Latch DB_5 hinder the constant cleaning in the block minimum.
    You should achieve better results by setting this init to 1.
 WARNING:Xst:1426 - The value init of the FF/Latch DB_4 hinder the constant cleaning in the block minimum.
@@ -320,83 +396,39 @@ WARNING:Xst:1293 - FF/Latch <DB_2> has a constant value of 0 in block <minimum>.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DB_3> has a constant value of 0 in block <minimum>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DB_6> has a constant value of 0 in block <minimum>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DB_7> has a constant value of 0 in block <minimum>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch flag hinder the constant cleaning in the block LCD_MIN.
+   You should achieve better results by setting this init to 1.
 INFO:Xst:2261 - The FF/Latch <DB_4> in Unit <minimum> is equivalent to the following FF/Latch, which will be removed : <DB_5> 
+WARNING:Xst:1710 - FF/Latch <lcd_rw> (without init value) has a constant value of 0 in block <LCD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <first_line_index_0> has a constant value of 0 in block <LCD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <first_line_index_1> has a constant value of 0 in block <LCD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <second_line_index_0> has a constant value of 0 in block <LCD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <second_line_index_1> has a constant value of 0 in block <LCD>. This FF/Latch will be trimmed during the optimization process.
 
 Optimizing unit <LCD_MIN> ...
 
-Optimizing unit <LCD> ...
-
 Optimizing unit <minimum> ...
-WARNING:Xst:2677 - Node <A_0> of sequential type is unconnected in block <LCD_MIN>.
-WARNING:Xst:2677 - Node <A_1> of sequential type is unconnected in block <LCD_MIN>.
-WARNING:Xst:2677 - Node <A_2> of sequential type is unconnected in block <LCD_MIN>.
-WARNING:Xst:2677 - Node <D_0> of sequential type is unconnected in block <LCD_MIN>.
-WARNING:Xst:2677 - Node <D_1> of sequential type is unconnected in block <LCD_MIN>.
-WARNING:Xst:2677 - Node <D_2> of sequential type is unconnected in block <LCD_MIN>.
-WARNING:Xst:2677 - Node <B_0> of sequential type is unconnected in block <LCD_MIN>.
-WARNING:Xst:2677 - Node <B_1> of sequential type is unconnected in block <LCD_MIN>.
-WARNING:Xst:2677 - Node <B_2> of sequential type is unconnected in block <LCD_MIN>.
-WARNING:Xst:2677 - Node <C_0> of sequential type is unconnected in block <LCD_MIN>.
-WARNING:Xst:2677 - Node <C_1> of sequential type is unconnected in block <LCD_MIN>.
-WARNING:Xst:2677 - Node <C_2> of sequential type is unconnected in block <LCD_MIN>.
-WARNING:Xst:2677 - Node <counter_FSM_FFd4> of sequential type is unconnected in block <LCD_MIN>.
-WARNING:Xst:2677 - Node <counter_FSM_FFd3> of sequential type is unconnected in block <LCD_MIN>.
-WARNING:Xst:2677 - Node <counter_FSM_FFd2> of sequential type is unconnected in block <LCD_MIN>.
-WARNING:Xst:2677 - Node <counter_FSM_FFd1> of sequential type is unconnected in block <LCD_MIN>.
-WARNING:Xst:2677 - Node <uut0/uut0/lcd_e> of sequential type is unconnected in block <LCD_MIN>.
-WARNING:Xst:2677 - Node <uut0/uut0/counter_0> of sequential type is unconnected in block <LCD_MIN>.
-WARNING:Xst:2677 - Node <uut0/uut0/counter_1> of sequential type is unconnected in block <LCD_MIN>.
-WARNING:Xst:2677 - Node <uut0/uut0/counter_2> of sequential type is unconnected in block <LCD_MIN>.
-WARNING:Xst:2677 - Node <uut0/uut0/counter_3> of sequential type is unconnected in block <LCD_MIN>.
-WARNING:Xst:2677 - Node <uut0/uut0/counter_4> of sequential type is unconnected in block <LCD_MIN>.
-WARNING:Xst:2677 - Node <uut0/uut0/counter_5> of sequential type is unconnected in block <LCD_MIN>.
-WARNING:Xst:2677 - Node <uut0/uut0/counter_6> of sequential type is unconnected in block <LCD_MIN>.
-WARNING:Xst:2677 - Node <uut0/uut0/counter_7> of sequential type is unconnected in block <LCD_MIN>.
-WARNING:Xst:2677 - Node <uut0/uut0/counter_8> of sequential type is unconnected in block <LCD_MIN>.
-WARNING:Xst:2677 - Node <uut0/uut0/counter_9> of sequential type is unconnected in block <LCD_MIN>.
-WARNING:Xst:2677 - Node <uut0/uut0/counter_10> of sequential type is unconnected in block <LCD_MIN>.
-WARNING:Xst:2677 - Node <uut0/uut0/counter_11> of sequential type is unconnected in block <LCD_MIN>.
-WARNING:Xst:2677 - Node <uut0/uut0/counter_12> of sequential type is unconnected in block <LCD_MIN>.
-WARNING:Xst:2677 - Node <uut0/uut0/counter_13> of sequential type is unconnected in block <LCD_MIN>.
-WARNING:Xst:2677 - Node <uut0/uut0/counter_14> of sequential type is unconnected in block <LCD_MIN>.
-WARNING:Xst:2677 - Node <uut0/uut0/counter_15> of sequential type is unconnected in block <LCD_MIN>.
-WARNING:Xst:2677 - Node <uut0/uut0/counter_16> of sequential type is unconnected in block <LCD_MIN>.
-WARNING:Xst:2677 - Node <uut0/uut0/counter_17> of sequential type is unconnected in block <LCD_MIN>.
-WARNING:Xst:2677 - Node <uut0/uut0/counter_18> of sequential type is unconnected in block <LCD_MIN>.
-WARNING:Xst:2677 - Node <uut0/uut0/counter_19> of sequential type is unconnected in block <LCD_MIN>.
-WARNING:Xst:2677 - Node <uut0/uut0/counter_20> of sequential type is unconnected in block <LCD_MIN>.
-WARNING:Xst:2677 - Node <uut0/uut0/lcd_rs> of sequential type is unconnected in block <LCD_MIN>.
-WARNING:Xst:2677 - Node <uut0/uut0/data_0> of sequential type is unconnected in block <LCD_MIN>.
-WARNING:Xst:2677 - Node <uut0/uut0/data_1> of sequential type is unconnected in block <LCD_MIN>.
-WARNING:Xst:2677 - Node <uut0/uut0/data_2> of sequential type is unconnected in block <LCD_MIN>.
-WARNING:Xst:2677 - Node <uut0/uut0/data_3> of sequential type is unconnected in block <LCD_MIN>.
-WARNING:Xst:2677 - Node <uut0/uut0/state_FSM_FFd1> of sequential type is unconnected in block <LCD_MIN>.
-WARNING:Xst:2677 - Node <uut0/uut0/state_FSM_FFd7> of sequential type is unconnected in block <LCD_MIN>.
-WARNING:Xst:2677 - Node <uut0/uut0/state_FSM_FFd6> of sequential type is unconnected in block <LCD_MIN>.
-WARNING:Xst:2677 - Node <uut0/uut0/state_FSM_FFd5> of sequential type is unconnected in block <LCD_MIN>.
-WARNING:Xst:2677 - Node <uut0/uut0/state_FSM_FFd4> of sequential type is unconnected in block <LCD_MIN>.
-WARNING:Xst:2677 - Node <uut0/uut0/state_FSM_FFd3> of sequential type is unconnected in block <LCD_MIN>.
-WARNING:Xst:2677 - Node <uut0/uut0/state_FSM_FFd2> of sequential type is unconnected in block <LCD_MIN>.
-WARNING:Xst:2677 - Node <uut0/uut0/step_FSM_FFd1> of sequential type is unconnected in block <LCD_MIN>.
-WARNING:Xst:2677 - Node <uut0/uut0/step_FSM_FFd2> of sequential type is unconnected in block <LCD_MIN>.
-WARNING:Xst:2677 - Node <uut0/uut0/step_FSM_FFd3> of sequential type is unconnected in block <LCD_MIN>.
-WARNING:Xst:2677 - Node <uut0/uut0/step_FSM_FFd4> of sequential type is unconnected in block <LCD_MIN>.
-WARNING:Xst:2677 - Node <uut0/DB_4> of sequential type is unconnected in block <LCD_MIN>.
-WARNING:Xst:2677 - Node <uut0/DB_1> of sequential type is unconnected in block <LCD_MIN>.
-WARNING:Xst:2677 - Node <uut0/DB_0> of sequential type is unconnected in block <LCD_MIN>.
-WARNING:Xst:2677 - Node <uut0/minpos_1> of sequential type is unconnected in block <LCD_MIN>.
-WARNING:Xst:2677 - Node <uut0/minpos_0> of sequential type is unconnected in block <LCD_MIN>.
+
+Optimizing unit <LCD> ...
+WARNING:Xst:1710 - FF/Latch <lines1_127> (without init value) has a constant value of 0 in block <LCD_MIN>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <lines1_126> (without init value) has a constant value of 0 in block <LCD_MIN>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <lines1_122> (without init value) has a constant value of 0 in block <LCD_MIN>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <lines1_123> (without init value) has a constant value of 0 in block <LCD_MIN>. This FF/Latch will be trimmed during the optimization process.
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block LCD_MIN, actual ratio is 0.
+INFO:Xst:2261 - The FF/Latch <lines1_125> in Unit <LCD_MIN> is equivalent to the following FF/Latch, which will be removed : <lines1_124> 
+Found area constraint ratio of 100 (+ 5) on block LCD_MIN, actual ratio is 2.
 
 Final Macro Processing ...
 
 =========================================================================
 Final Register Report
 
-Found no macro
+Macro Statistics
+# Registers                                            : 91
+ Flip-Flops                                            : 91
+
 =========================================================================
 
 =========================================================================
@@ -421,9 +453,39 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 5
+# IOs                              : 17
 
 Cell Usage :
+# BELS                             : 272
+#      GND                         : 1
+#      INV                         : 21
+#      LUT1                        : 2
+#      LUT2                        : 21
+#      LUT2_L                      : 3
+#      LUT3                        : 32
+#      LUT3_D                      : 5
+#      LUT3_L                      : 8
+#      LUT4                        : 104
+#      LUT4_D                      : 5
+#      LUT4_L                      : 15
+#      MUXCY                       : 25
+#      MUXF5                       : 8
+#      MUXF6                       : 1
+#      VCC                         : 1
+#      XORCY                       : 20
+# FlipFlops/Latches                : 91
+#      FD                          : 28
+#      FDE                         : 38
+#      FDR                         : 13
+#      FDRE                        : 3
+#      FDRSE                       : 1
+#      FDS                         : 7
+#      FDSE                        : 1
+# Clock Buffers                    : 5
+#      BUFGP                       : 5
+# IO Buffers                       : 12
+#      IBUF                        : 3
+#      OBUF                        : 9
 =========================================================================
 
 Device utilization summary:
@@ -431,9 +493,13 @@ Device utilization summary:
 
 Selected Device : 3s500efg320-4 
 
- Number of Slices:                        0  out of   4656     0%  
- Number of IOs:                           5
- Number of bonded IOBs:                   0  out of    232     0%  
+ Number of Slices:                      117  out of   4656     2%  
+ Number of Slice Flip Flops:             89  out of   9312     0%  
+ Number of 4 input LUTs:                216  out of   9312     2%  
+ Number of IOs:                          17
+ Number of bonded IOBs:                  17  out of    232     7%  
+    IOB Flip Flops:                       2
+ Number of GCLKs:                         5  out of     24    20%  
 
 ---------------------------
 Partition Resource Summary:
@@ -453,7 +519,15 @@ NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
 
 Clock Information:
 ------------------
-No clock signals found in this design
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+PB1                                | BUFGP                  | 6     |
+PB2                                | BUFGP                  | 6     |
+PB3                                | BUFGP                  | 6     |
+PB4                                | BUFGP                  | 10    |
+clk                                | BUFGP                  | 63    |
+-----------------------------------+------------------------+-------+
 
 Asynchronous Control Signals Information:
 ----------------------------------------
@@ -463,9 +537,9 @@ Timing Summary:
 ---------------
 Speed Grade: -4
 
-   Minimum period: No path found
-   Minimum input arrival time before clock: No path found
-   Maximum output required time after clock: No path found
+   Minimum period: 7.836ns (Maximum Frequency: 127.616MHz)
+   Minimum input arrival time before clock: 2.113ns
+   Maximum output required time after clock: 4.496ns
    Maximum combinational path delay: No path found
 
 Timing Detail:
@@ -473,16 +547,222 @@ Timing Detail:
 All values displayed in nanoseconds (ns)
 
 =========================================================================
+Timing constraint: Default period analysis for Clock 'PB1'
+  Clock period: 1.607ns (frequency: 622.278MHz)
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Delay:               1.607ns (Levels of Logic = 0)
+  Source:            A_2 (FF)
+  Destination:       lines_122 (FF)
+  Source Clock:      PB1 rising
+  Destination Clock: PB1 rising
+
+  Data Path: A_2 to lines_122
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               7   0.591   0.708  A_2 (A_2)
+     FD:D                      0.308          lines_122
+    ----------------------------------------
+    Total                      1.607ns (0.899ns logic, 0.708ns route)
+                                       (55.9% logic, 44.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'PB2'
+  Clock period: 1.656ns (frequency: 603.865MHz)
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Delay:               1.656ns (Levels of Logic = 0)
+  Source:            B_2 (FF)
+  Destination:       lines_98 (FF)
+  Source Clock:      PB2 rising
+  Destination Clock: PB2 rising
+
+  Data Path: B_2 to lines_98
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               8   0.591   0.757  B_2 (B_2)
+     FD:D                      0.308          lines_98
+    ----------------------------------------
+    Total                      1.656ns (0.899ns logic, 0.757ns route)
+                                       (54.3% logic, 45.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'PB3'
+  Clock period: 1.656ns (frequency: 603.865MHz)
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Delay:               1.656ns (Levels of Logic = 0)
+  Source:            C_2 (FF)
+  Destination:       lines_74 (FF)
+  Source Clock:      PB3 rising
+  Destination Clock: PB3 rising
+
+  Data Path: C_2 to lines_74
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               8   0.591   0.757  C_2 (C_2)
+     FD:D                      0.308          lines_74
+    ----------------------------------------
+    Total                      1.656ns (0.899ns logic, 0.757ns route)
+                                       (54.3% logic, 45.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'PB4'
+  Clock period: 1.719ns (frequency: 581.734MHz)
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Delay:               1.719ns (Levels of Logic = 0)
+  Source:            D_2 (FF)
+  Destination:       lines_50 (FF)
+  Source Clock:      PB4 rising
+  Destination Clock: PB4 rising
+
+  Data Path: D_2 to lines_50
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               9   0.591   0.820  D_2 (D_2)
+     FD:D                      0.308          lines_50
+    ----------------------------------------
+    Total                      1.719ns (0.899ns logic, 0.820ns route)
+                                       (52.3% logic, 47.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 7.836ns (frequency: 127.616MHz)
+  Total number of paths / destination ports: 3122 / 116
+-------------------------------------------------------------------------
+Delay:               7.836ns (Levels of Logic = 5)
+  Source:            uut1/second_line_index_6 (FF)
+  Destination:       uut1/lcd6 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: uut1/second_line_index_6 to uut1/lcd6
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              4   0.591   0.762  uut1/second_line_index_6 (uut1/second_line_index_6)
+     LUT4:I0->O            5   0.704   0.668  uut1/Mmux__COND_14921 (uut1/lcd4_mux000056)
+     LUT3:I2->O           11   0.704   1.108  uut1/second_line_state_cmp_eq00001 (uut1/second_line_state_cmp_eq0000)
+     LUT4_D:I0->O          1   0.704   0.424  uut1/lcd6_mux000061_SW0 (N26)
+     LUT4:I3->O            1   0.704   0.455  uut1/lcd6_mux0000246 (uut1/lcd6_mux0000246)
+     LUT4:I2->O            1   0.704   0.000  uut1/lcd6_mux0000279 (uut1/lcd6_mux0000)
+     FDE:D                     0.308          uut1/lcd6
+    ----------------------------------------
+    Total                      7.836ns (4.419ns logic, 3.417ns route)
+                                       (56.4% logic, 43.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'PB1'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              2.113ns (Levels of Logic = 1)
+  Source:            slide<0> (PAD)
+  Destination:       A_0 (FF)
+  Destination Clock: PB1 rising
+
+  Data Path: slide<0> to A_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   1.218   0.587  slide_0_IBUF (slide_0_IBUF)
+     FD:D                      0.308          A_0
+    ----------------------------------------
+    Total                      2.113ns (1.526ns logic, 0.587ns route)
+                                       (72.2% logic, 27.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'PB2'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              2.113ns (Levels of Logic = 1)
+  Source:            slide<0> (PAD)
+  Destination:       B_0 (FF)
+  Destination Clock: PB2 rising
+
+  Data Path: slide<0> to B_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   1.218   0.587  slide_0_IBUF (slide_0_IBUF)
+     FD:D                      0.308          B_0
+    ----------------------------------------
+    Total                      2.113ns (1.526ns logic, 0.587ns route)
+                                       (72.2% logic, 27.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'PB3'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              2.113ns (Levels of Logic = 1)
+  Source:            slide<0> (PAD)
+  Destination:       C_0 (FF)
+  Destination Clock: PB3 rising
+
+  Data Path: slide<0> to C_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   1.218   0.587  slide_0_IBUF (slide_0_IBUF)
+     FD:D                      0.308          C_0
+    ----------------------------------------
+    Total                      2.113ns (1.526ns logic, 0.587ns route)
+                                       (72.2% logic, 27.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'PB4'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              2.113ns (Levels of Logic = 1)
+  Source:            slide<0> (PAD)
+  Destination:       D_0 (FF)
+  Destination Clock: PB4 rising
+
+  Data Path: slide<0> to D_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   1.218   0.587  slide_0_IBUF (slide_0_IBUF)
+     FD:D                      0.308          D_0
+    ----------------------------------------
+    Total                      2.113ns (1.526ns logic, 0.587ns route)
+                                       (72.2% logic, 27.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              4.496ns (Levels of Logic = 1)
+  Source:            uut1/lcd_e (FF)
+  Destination:       lcd_e (PAD)
+  Source Clock:      clk rising
+
+  Data Path: uut1/lcd_e to lcd_e
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              5   0.591   0.633  uut1/lcd_e (uut1/lcd_e)
+     OBUF:I->O                 3.272          lcd_e_OBUF (lcd_e)
+    ----------------------------------------
+    Total                      4.496ns (3.863ns logic, 0.633ns route)
+                                       (85.9% logic, 14.1% route)
+
+=========================================================================
 
 
-Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 7.09 secs
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 6.12 secs
  
 --> 
 
-Total memory usage is 4550528 kilobytes
+
+Total memory usage is 537152 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   72 (   0 filtered)
-Number of infos    :    2 (   0 filtered)
+Number of warnings :   33 (   0 filtered)
+Number of infos    :    5 (   0 filtered)
 
