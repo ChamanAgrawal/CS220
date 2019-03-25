@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="info" file="MapLib" num="562" delta="new" >No environment variables are currently set.
+</msg>
+
+<msg type="info" file="LIT" num="244" delta="new" >All of the single ended outputs in this design are using slew rate limited output drivers. The delay on speed critical single ended outputs can be dramatically reduced by designating them as fast outputs.
+</msg>
+
+<msg type="warning" file="Pack" num="266" delta="new" >The function generator <arg fmt="%s" index="1">I0/LEFT/Mmux_R_13_mux0000_10</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">I0/LEFT/Mmux_R_5_mux0000_8_f5</arg>.  <arg fmt="%z" index="3">There is a conflict for the FXMUX.</arg>  The design will exhibit suboptimal timing.
+</msg>
+
+<msg type="warning" file="Pack" num="266" delta="new" >The function generator <arg fmt="%s" index="1">I0/LEFT/Mmux_R_14_mux0000_6</arg> failed to merge with F5 multiplexer <arg fmt="%s" index="2">I0/LEFT/Mmux_R_4_mux0000_8_f5</arg>.  <arg fmt="%z" index="3">There is a conflict for the FXMUX.</arg>  The design will exhibit suboptimal timing.
+</msg>
+
+</messages>
+

@@ -1,0 +1,7 @@
+MO lcd_driver NULL lcd_driver.v vlg46/lcd__driver.bin 1553508500
+MO detector NULL detector.v vlg02/detector.bin 1553508500
+MO top NULL top.v vlg6F/top.bin 1553508500
+MO left_shift NULL left_shift.v vlg4C/left__shift.bin 1553508500
+MO full_adder NULL full_adder.v vlg5A/full__adder.bin 1553508500
+MO sixteen_arithmetic NULL sixteen_arithmetic.v vlg29/sixteen__arithmetic.bin 1553508500
+MO interface NULL interface.v vlg09/interface.bin 1553508500

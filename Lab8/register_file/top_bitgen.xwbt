@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/chaman/git/CS220/Lab8/register_file/top.ncd
+OUTFILE=/home/chaman/git/CS220/Lab8/register_file/top.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=/home/chaman/git/CS220/Lab8/register_file
+LICENSE=WebPack
+USER_INFO=211671844_0_0_473

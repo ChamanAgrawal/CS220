@@ -1,0 +1,62 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+# Start of session at: Mon Mar  4 16:00:12 2019
+# Process ID: 9941
+# Log file: /media/chamanag/8B9E-BFB0/Lab 7/FSM/planAhead_run_2/planAhead.log
+# Journal file: /media/chamanag/8B9E-BFB0/Lab 7/FSM/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Common 17-86] Your PlanAhead license expires in -63 day(s)
+INFO: [Device 21-36] Loading parts and site information from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source {/media/chamanag/8B9E-BFB0/Lab 7/FSM/pa.fromHdl.tcl}
+# create_project -name FSM -dir "/media/chamanag/8B9E-BFB0/Lab 7/FSM/planAhead_run_2" -part xc3s500efg320-4
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "FSM.ucf" [current_fileset -constrset]
+Adding file '/media/chamanag/8B9E-BFB0/Lab 7/FSM/FSM.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {FSM.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set_property top FSM $srcset
+# add_files [list {FSM.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc3s500efg320-4
+Using Verific elaboration
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Analyzing Verilog file "/media/chamanag/8B9E-BFB0/Lab 7/FSM/FSM.v" into library work
+INFO: [Designutils 20-910] Reading macro library /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn
+Parsing EDIF File [/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Finished Parsing EDIF File [/opt/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Loading clock regions from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan3e/spartan3e/xc3s500e/ClockRegion.xml
+Loading clock buffers from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan3e/spartan3e/xc3s500e/ClockBuffers.xml
+Loading package from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan3e/spartan3e/xc3s500e/fg320/Package.xml
+Loading io standards from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan3e/IOStandards.xml
+INFO: [Device 21-19] Loading pkg sso from /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan3e/spartan3e/xc3s500e/fg320/SSORules.xml
+Loading list of drcs for the architecture : /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan3e/spartan3e/drc.xml
+INFO: [Timing 38-77] Reading timing library /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+INFO: [Timing 38-34] Done reading timing library /opt/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+Parsing UCF File [/media/chamanag/8B9E-BFB0/Lab 7/FSM/FSM.ucf]
+Finished Parsing UCF File [/media/chamanag/8B9E-BFB0/Lab 7/FSM/FSM.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 92e62f18
+open_rtl_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:05 . Memory (MB): peak = 2827.523 ; gain = 146.883
+update_compile_order -fileset sim_1
+set_property pulltype NONE [get_ports [list {state[3]} {state[2]} {state[1]} {state[0]}]]
+set_property pulltype PULLUP [get_ports [list {Y[1]} {Y[0]}]]
+save_constraints
+exit
+ERROR: [#UNDEF] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+ (See /media/chamanag/8B9E-BFB0/Lab 7/FSM/planAhead_pid9941.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Mon Mar  4 16:01:04 2019...
+INFO: [Common 17-83] Releasing license: PlanAhead

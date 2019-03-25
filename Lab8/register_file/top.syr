@@ -1,0 +1,883 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+Reading design: top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "full_adder.v" in library work
+Compiling verilog file "sixteen_arithmetic.v" in library work
+Module <full_adder> compiled
+Compiling verilog file "left_shift.v" in library work
+Module <sixteen_arithmetic> compiled
+Compiling verilog file "lcd_driver.v" in library work
+Module <left_shift> compiled
+Compiling verilog file "interface.v" in library work
+Module <lcd_driver> compiled
+Compiling verilog file "detector.v" in library work
+Module <interface> compiled
+Compiling verilog file "top.v" in library work
+Module <detector> compiled
+Module <top> compiled
+No errors in compilation
+Analysis of file <"top.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <top> in library <work>.
+
+Analyzing hierarchy for module <detector> in library <work>.
+
+Analyzing hierarchy for module <interface> in library <work>.
+
+Analyzing hierarchy for module <lcd_driver> in library <work>.
+
+Analyzing hierarchy for module <sixteen_arithmetic> in library <work>.
+
+Analyzing hierarchy for module <left_shift> in library <work>.
+
+Analyzing hierarchy for module <full_adder> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <top>.
+Module <top> is correct for synthesis.
+ 
+Analyzing module <detector> in library <work>.
+Module <detector> is correct for synthesis.
+ 
+Analyzing module <interface> in library <work>.
+Module <interface> is correct for synthesis.
+ 
+Analyzing module <sixteen_arithmetic> in library <work>.
+Module <sixteen_arithmetic> is correct for synthesis.
+ 
+Analyzing module <full_adder> in library <work>.
+Module <full_adder> is correct for synthesis.
+ 
+Analyzing module <left_shift> in library <work>.
+Module <left_shift> is correct for synthesis.
+ 
+Analyzing module <lcd_driver> in library <work>.
+Module <lcd_driver> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+INFO:Xst:2679 - Register <line1<127>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<126>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<123>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<122>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<121>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<119>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<118>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<115>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<114>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<113>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<111>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<110>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<107>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<106>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<105>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<103>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<102>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<99>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<98>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<97>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<95>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<94>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<91>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<90>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<89>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<87>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<86>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<83>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<82>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<81>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<79>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<78>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<75>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<74>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<73>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<71>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<70>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<67>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<66>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<65>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<63>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<62>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<59>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<58>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<57>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<55>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<54>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<51>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<50>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<49>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<47>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<46>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<43>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<42>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<41>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<39>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<38>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<35>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<34>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<33>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<31>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<30>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<27>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<26>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<25>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<23>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<22>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<19>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<18>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<17>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<15>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<14>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<11>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<10>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<9>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<7>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<6>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<3>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<2>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line1<1>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<127>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<126>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<123>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<122>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<121>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<119>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<118>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<115>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<114>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<113>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<111>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<110>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<107>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<106>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<105>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<103>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<102>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<99>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<98>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<97>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<95>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<94>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<91>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<90>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<89>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<87>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<86>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<83>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<82>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<81>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<79>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<78>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<75>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<74>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<73>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<71>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<70>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<67>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<66>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<65>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<63>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<62>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<59>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<58>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<57>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<55>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<54>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<51>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<50>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<49>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<47>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<46>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<43>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<42>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<41>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<39>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<38>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<35>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<34>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<33>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<31>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<30>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<27>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<26>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<25>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<23>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<22>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<19>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<18>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<17>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<15>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<14>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<11>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<10>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<9>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<7>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<6>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<3>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<2>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <line2<1>> in unit <interface> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <LCD_W> in unit <lcd_driver> has a constant value of 0 during circuit operation. The register is replaced by logic.
+
+Synthesizing Unit <detector>.
+    Related source file is "detector.v".
+    Found 1-bit register for signal <rot>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <detector> synthesized.
+
+
+Synthesizing Unit <lcd_driver>.
+    Related source file is "lcd_driver.v".
+    Found 1-bit register for signal <LCD_E>.
+    Found 1-bit register for signal <LCD_RS>.
+    Found 4-bit register for signal <databits>.
+    Found 20-bit up counter for signal <counter>.
+    Found 16-bit up counter for signal <state>.
+    Summary:
+	inferred   2 Counter(s).
+	inferred   6 D-type flip-flop(s).
+Unit <lcd_driver> synthesized.
+
+
+Synthesizing Unit <left_shift>.
+    Related source file is "left_shift.v".
+    Found 16-bit register for signal <R>.
+    Found 1-bit 16-to-1 multiplexer for signal <R_0$mux0000>.
+    Found 1-bit 16-to-1 multiplexer for signal <R_1$mux0000>.
+    Found 1-bit 16-to-1 multiplexer for signal <R_10$mux0000>.
+    Found 1-bit 16-to-1 multiplexer for signal <R_11$mux0000>.
+    Found 1-bit 16-to-1 multiplexer for signal <R_12$mux0000>.
+    Found 1-bit 16-to-1 multiplexer for signal <R_13$mux0000>.
+    Found 1-bit 16-to-1 multiplexer for signal <R_14$mux0000>.
+    Found 1-bit 16-to-1 multiplexer for signal <R_15$mux0000>.
+    Found 1-bit 16-to-1 multiplexer for signal <R_2$mux0000>.
+    Found 1-bit 16-to-1 multiplexer for signal <R_3$mux0000>.
+    Found 1-bit 16-to-1 multiplexer for signal <R_4$mux0000>.
+    Found 1-bit 16-to-1 multiplexer for signal <R_5$mux0000>.
+    Found 1-bit 16-to-1 multiplexer for signal <R_6$mux0000>.
+    Found 1-bit 16-to-1 multiplexer for signal <R_7$mux0000>.
+    Found 1-bit 16-to-1 multiplexer for signal <R_8$mux0000>.
+    Found 1-bit 16-to-1 multiplexer for signal <R_9$mux0000>.
+    Summary:
+	inferred  16 D-type flip-flop(s).
+	inferred  16 Multiplexer(s).
+Unit <left_shift> synthesized.
+
+
+Synthesizing Unit <full_adder>.
+    Related source file is "full_adder.v".
+    Found 1-bit xor3 for signal <s>.
+    Summary:
+	inferred   1 Xor(s).
+Unit <full_adder> synthesized.
+
+
+Synthesizing Unit <sixteen_arithmetic>.
+    Related source file is "sixteen_arithmetic.v".
+WARNING:Xst:646 - Signal <C<15>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 1-bit xor2 for signal <$xor0000> created at line 29.
+    Found 1-bit xor2 for signal <$xor0001> created at line 30.
+    Found 1-bit xor2 for signal <$xor0002> created at line 31.
+    Found 1-bit xor2 for signal <$xor0003> created at line 32.
+    Found 1-bit xor2 for signal <$xor0004> created at line 33.
+    Found 1-bit xor2 for signal <$xor0005> created at line 34.
+    Found 1-bit xor2 for signal <$xor0006> created at line 35.
+    Found 1-bit xor2 for signal <$xor0007> created at line 36.
+    Found 1-bit xor2 for signal <$xor0008> created at line 37.
+    Found 1-bit xor2 for signal <$xor0009> created at line 38.
+    Found 1-bit xor2 for signal <$xor0010> created at line 39.
+    Found 1-bit xor2 for signal <$xor0011> created at line 40.
+    Found 1-bit xor2 for signal <$xor0012> created at line 41.
+    Found 1-bit xor2 for signal <$xor0013> created at line 42.
+    Found 1-bit xor2 for signal <$xor0014> created at line 43.
+    Found 1-bit xor2 for signal <$xor0015> created at line 44.
+Unit <sixteen_arithmetic> synthesized.
+
+
+Synthesizing Unit <interface>.
+    Related source file is "interface.v".
+    Register <line1<101>> equivalent to <line1<100>> has been removed
+    Register <line1<108>> equivalent to <line1<100>> has been removed
+    Register <line1<109>> equivalent to <line1<100>> has been removed
+    Register <line1<116>> equivalent to <line1<100>> has been removed
+    Register <line1<117>> equivalent to <line1<100>> has been removed
+    Register <line1<124>> equivalent to <line1<100>> has been removed
+    Register <line1<125>> equivalent to <line1<100>> has been removed
+    Register <line1<12>> equivalent to <line1<100>> has been removed
+    Register <line1<13>> equivalent to <line1<100>> has been removed
+    Register <line1<20>> equivalent to <line1<100>> has been removed
+    Register <line1<21>> equivalent to <line1<100>> has been removed
+    Register <line1<28>> equivalent to <line1<100>> has been removed
+    Register <line1<29>> equivalent to <line1<100>> has been removed
+    Register <line1<36>> equivalent to <line1<100>> has been removed
+    Register <line1<37>> equivalent to <line1<100>> has been removed
+    Register <line1<44>> equivalent to <line1<100>> has been removed
+    Register <line1<45>> equivalent to <line1<100>> has been removed
+    Register <line1<4>> equivalent to <line1<100>> has been removed
+    Register <line1<52>> equivalent to <line1<100>> has been removed
+    Register <line1<53>> equivalent to <line1<100>> has been removed
+    Register <line1<5>> equivalent to <line1<100>> has been removed
+    Register <line1<60>> equivalent to <line1<100>> has been removed
+    Register <line1<61>> equivalent to <line1<100>> has been removed
+    Register <line1<68>> equivalent to <line1<100>> has been removed
+    Register <line1<69>> equivalent to <line1<100>> has been removed
+    Register <line1<76>> equivalent to <line1<100>> has been removed
+    Register <line1<77>> equivalent to <line1<100>> has been removed
+    Register <line1<84>> equivalent to <line1<100>> has been removed
+    Register <line1<85>> equivalent to <line1<100>> has been removed
+    Register <line1<92>> equivalent to <line1<100>> has been removed
+    Register <line1<93>> equivalent to <line1<100>> has been removed
+    Register <line2<100>> equivalent to <line1<100>> has been removed
+    Register <line2<101>> equivalent to <line1<100>> has been removed
+    Register <line2<108>> equivalent to <line1<100>> has been removed
+    Register <line2<109>> equivalent to <line1<100>> has been removed
+    Register <line2<116>> equivalent to <line1<100>> has been removed
+    Register <line2<117>> equivalent to <line1<100>> has been removed
+    Register <line2<124>> equivalent to <line1<100>> has been removed
+    Register <line2<125>> equivalent to <line1<100>> has been removed
+    Register <line2<12>> equivalent to <line1<100>> has been removed
+    Register <line2<13>> equivalent to <line1<100>> has been removed
+    Register <line2<20>> equivalent to <line1<100>> has been removed
+    Register <line2<21>> equivalent to <line1<100>> has been removed
+    Register <line2<28>> equivalent to <line1<100>> has been removed
+    Register <line2<29>> equivalent to <line1<100>> has been removed
+    Register <line2<36>> equivalent to <line1<100>> has been removed
+    Register <line2<37>> equivalent to <line1<100>> has been removed
+    Register <line2<44>> equivalent to <line1<100>> has been removed
+    Register <line2<45>> equivalent to <line1<100>> has been removed
+    Register <line2<4>> equivalent to <line1<100>> has been removed
+    Register <line2<52>> equivalent to <line1<100>> has been removed
+    Register <line2<53>> equivalent to <line1<100>> has been removed
+    Register <line2<5>> equivalent to <line1<100>> has been removed
+    Register <line2<60>> equivalent to <line1<100>> has been removed
+    Register <line2<61>> equivalent to <line1<100>> has been removed
+    Register <line2<68>> equivalent to <line1<100>> has been removed
+    Register <line2<69>> equivalent to <line1<100>> has been removed
+    Register <line2<76>> equivalent to <line1<100>> has been removed
+    Register <line2<77>> equivalent to <line1<100>> has been removed
+    Register <line2<84>> equivalent to <line1<100>> has been removed
+    Register <line2<85>> equivalent to <line1<100>> has been removed
+    Register <line2<92>> equivalent to <line1<100>> has been removed
+    Register <line2<93>> equivalent to <line1<100>> has been removed
+    Found finite state machine <FSM_0> for signal <count>.
+    -----------------------------------------------------------------------
+    | States             | 10                                             |
+    | Transitions        | 171                                            |
+    | Inputs             | 12                                             |
+    | Outputs            | 11                                             |
+    | Clock              | clk                       (rising_edge)        |
+    | Clock enable       | count$not0000             (positive)           |
+    | Power Up State     | 0000                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_1> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 25                                             |
+    | Transitions        | 93                                             |
+    | Inputs             | 19                                             |
+    | Outputs            | 25                                             |
+    | Clock              | clk                       (rising_edge)        |
+    | Clock enable       | count$not0000             (positive)           |
+    | Power Up State     | 00000                                          |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 1-bit register for signal <line1<120>>.
+    Found 1-bit register for signal <line1<112>>.
+    Found 1-bit register for signal <line1<104>>.
+    Found 1-bit register for signal <line1<100>>.
+    Found 1-bit register for signal <line1<96>>.
+    Found 1-bit register for signal <line1<88>>.
+    Found 1-bit register for signal <line1<80>>.
+    Found 1-bit register for signal <line1<72>>.
+    Found 1-bit register for signal <line1<64>>.
+    Found 1-bit register for signal <line1<56>>.
+    Found 1-bit register for signal <line1<48>>.
+    Found 1-bit register for signal <line1<40>>.
+    Found 1-bit register for signal <line1<32>>.
+    Found 1-bit register for signal <line1<24>>.
+    Found 1-bit register for signal <line1<16>>.
+    Found 1-bit register for signal <line1<8>>.
+    Found 1-bit register for signal <line1<0>>.
+    Found 1-bit register for signal <line2<120>>.
+    Found 1-bit register for signal <line2<112>>.
+    Found 1-bit register for signal <line2<104>>.
+    Found 1-bit register for signal <line2<96>>.
+    Found 1-bit register for signal <line2<88>>.
+    Found 1-bit register for signal <line2<80>>.
+    Found 1-bit register for signal <line2<72>>.
+    Found 1-bit register for signal <line2<64>>.
+    Found 1-bit register for signal <line2<56>>.
+    Found 1-bit register for signal <line2<48>>.
+    Found 1-bit register for signal <line2<40>>.
+    Found 1-bit register for signal <line2<32>>.
+    Found 1-bit register for signal <line2<24>>.
+    Found 1-bit register for signal <line2<16>>.
+    Found 1-bit register for signal <line2<8>>.
+    Found 1-bit register for signal <line2<0>>.
+    Found 512-bit register for signal <mem_block>.
+    Found 1-bit register for signal <op>.
+    Found 1-bit register for signal <prev>.
+    Found 5-bit register for signal <r_addr1>.
+    Found 5-bit register for signal <r_addr2>.
+    Found 16-bit register for signal <r_data1>.
+    Found 16-bit register for signal <r_data2>.
+    Found 4-bit register for signal <shift>.
+    Found 5-bit register for signal <w_addr>.
+    Found 16-bit register for signal <w_data>.
+INFO:Xst:738 - HDL ADVISOR - 512 flip-flops were inferred for signal <mem_block>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+    Summary:
+	inferred   2 Finite State Machine(s).
+	inferred 614 D-type flip-flop(s).
+	inferred  32 Multiplexer(s).
+Unit <interface> synthesized.
+
+
+Synthesizing Unit <top>.
+    Related source file is "top.v".
+Unit <top> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 2
+ 16-bit up counter                                     : 1
+ 20-bit up counter                                     : 1
+# Registers                                            : 121
+ 1-bit register                                        : 85
+ 16-bit register                                       : 34
+ 4-bit register                                        : 2
+# Multiplexers                                         : 18
+ 1-bit 16-to-1 multiplexer                             : 16
+ 16-bit 32-to-1 multiplexer                            : 2
+# Xors                                                 : 32
+ 1-bit xor2                                            : 16
+ 1-bit xor3                                            : 16
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_1> for best encoding.
+Optimizing FSM <I0/state/FSM> on signal <state[1:25]> with one-hot encoding.
+------------------------------------
+ State | Encoding
+------------------------------------
+ 00000 | 0000000000000000000000001
+ 00001 | 0000000000000000000000010
+ 00010 | 0000000000000000000000100
+ 00011 | 0000000000000000000001000
+ 00100 | 0000000000000000000010000
+ 00101 | 0000000000000000000100000
+ 00110 | 0000000000000000001000000
+ 00111 | 0000000000000000010000000
+ 01000 | 0000000000000000100000000
+ 01001 | 0000000000000001000000000
+ 01010 | 0000000000000010000000000
+ 01011 | 0000000000000100000000000
+ 01100 | 0000000000001000000000000
+ 01101 | 0000000000010000000000000
+ 01110 | 0000000000100000000000000
+ 01111 | 0000000001000000000000000
+ 10000 | 0000000010000000000000000
+ 10001 | 0000000100000000000000000
+ 10010 | 0000001000000000000000000
+ 10011 | 0000010000000000000000000
+ 10100 | 0000100000000000000000000
+ 10101 | 0001000000000000000000000
+ 10110 | 0010000000000000000000000
+ 10111 | 0100000000000000000000000
+ 11000 | 1000000000000000000000000
+------------------------------------
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <I0/count/FSM> on signal <count[1:4]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 0000
+ 0001  | 0001
+ 0010  | 0010
+ 0011  | 0011
+ 0100  | 0100
+ 0101  | 0101
+ 0110  | 0110
+ 0111  | 0111
+ 1000  | 1000
+ 1001  | 1001
+-------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 2
+# Counters                                             : 2
+ 16-bit up counter                                     : 1
+ 20-bit up counter                                     : 1
+# Registers                                            : 637
+ Flip-Flops                                            : 637
+# Multiplexers                                         : 18
+ 1-bit 16-to-1 multiplexer                             : 16
+ 16-bit 32-to-1 multiplexer                            : 2
+# Xors                                                 : 32
+ 1-bit xor2                                            : 16
+ 1-bit xor3                                            : 16
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <top> ...
+
+Optimizing unit <lcd_driver> ...
+
+Optimizing unit <left_shift> ...
+
+Optimizing unit <sixteen_arithmetic> ...
+
+Optimizing unit <interface> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block top, actual ratio is 22.
+FlipFlop I0/op has been replicated 1 time(s)
+FlipFlop I0/state_FSM_FFd1 has been replicated 1 time(s)
+FlipFlop I0/state_FSM_FFd2 has been replicated 1 time(s)
+FlipFlop I0/state_FSM_FFd3 has been replicated 1 time(s)
+FlipFlop I0/state_FSM_FFd4 has been replicated 1 time(s)
+FlipFlop I0/state_FSM_FFd5 has been replicated 1 time(s)
+FlipFlop I0/state_FSM_FFd6 has been replicated 1 time(s)
+FlipFlop I0/state_FSM_FFd7 has been replicated 1 time(s)
+FlipFlop I0/state_FSM_FFd8 has been replicated 1 time(s)
+FlipFlop L0/state_2 has been replicated 2 time(s)
+FlipFlop L0/state_5 has been replicated 2 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 715
+ Flip-Flops                                            : 715
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : top.ngr
+Top Level Output File Name         : top
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 15
+
+Cell Usage :
+# BELS                             : 2704
+#      GND                         : 1
+#      INV                         : 4
+#      LUT1                        : 34
+#      LUT2                        : 34
+#      LUT2_D                      : 26
+#      LUT2_L                      : 6
+#      LUT3                        : 654
+#      LUT3_D                      : 34
+#      LUT3_L                      : 22
+#      LUT4                        : 1007
+#      LUT4_D                      : 143
+#      LUT4_L                      : 73
+#      MUXCY                       : 57
+#      MUXF5                       : 334
+#      MUXF6                       : 140
+#      MUXF7                       : 66
+#      MUXF8                       : 32
+#      VCC                         : 1
+#      XORCY                       : 36
+# FlipFlops/Latches                : 715
+#      FD                          : 9
+#      FDE                         : 657
+#      FDR                         : 28
+#      FDRE                        : 20
+#      FDSE                        : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 14
+#      IBUF                        : 7
+#      OBUF                        : 7
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                     1071  out of   4656    23%  
+ Number of Slice Flip Flops:            715  out of   9312     7%  
+ Number of 4 input LUTs:               2037  out of   9312    21%  
+ Number of IOs:                          15
+ Number of bonded IOBs:                  15  out of    232     6%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 715   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 9.882ns (Maximum Frequency: 101.198MHz)
+   Minimum input arrival time before clock: 4.738ns
+   Maximum output required time after clock: 4.310ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 9.882ns (frequency: 101.198MHz)
+  Total number of paths / destination ports: 82194 / 1434
+-------------------------------------------------------------------------
+Delay:               9.882ns (Levels of Logic = 7)
+  Source:            L0/state_7 (FF)
+  Destination:       L0/databits_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: L0/state_7 to L0/databits_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            84   0.591   1.358  L0/state_7 (L0/state_7)
+     LUT3_D:I1->O          5   0.704   0.668  L0/LCD_E_cmp_eq017611 (L0/N37)
+     LUT3:I2->O            2   0.704   0.451  L0/LCD_RS_cmp_eq00031 (L0/LCD_RS_cmp_eq0003)
+     LUT4:I3->O            1   0.704   0.595  L0/databits_mux0000<3>241 (L0/databits_mux0000<3>241)
+     LUT4:I0->O            1   0.704   0.424  L0/databits_mux0000<3>273 (L0/databits_mux0000<3>273)
+     LUT4:I3->O            1   0.704   0.424  L0/databits_mux0000<3>443_SW0_SW0 (N210)
+     LUT4_L:I3->LO         1   0.704   0.135  L0/databits_mux0000<3>443 (L0/databits_mux0000<3>443)
+     LUT4:I2->O            1   0.704   0.000  L0/databits_mux0000<3>467 (L0/databits_mux0000<3>)
+     FDE:D                     0.308          L0/databits_0
+    ----------------------------------------
+    Total                      9.882ns (5.827ns logic, 4.055ns route)
+                                       (59.0% logic, 41.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 113 / 87
+-------------------------------------------------------------------------
+Offset:              4.738ns (Levels of Logic = 3)
+  Source:            bits<1> (PAD)
+  Destination:       I0/state_FSM_FFd24 (FF)
+  Destination Clock: clk rising
+
+  Data Path: bits<1> to I0/state_FSM_FFd24
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            16   1.218   1.209  bits_1_IBUF (bits_1_IBUF)
+     LUT4:I0->O            1   0.704   0.595  I0/state_FSM_FFd24-In32 (I0/state_FSM_FFd24-In32)
+     LUT3:I0->O            1   0.704   0.000  I0/state_FSM_FFd24-In34 (I0/state_FSM_FFd24-In)
+     FDE:D                     0.308          I0/state_FSM_FFd24
+    ----------------------------------------
+    Total                      4.738ns (2.934ns logic, 1.804ns route)
+                                       (61.9% logic, 38.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 6 / 6
+-------------------------------------------------------------------------
+Offset:              4.310ns (Levels of Logic = 1)
+  Source:            L0/LCD_E (FF)
+  Destination:       lcd_e (PAD)
+  Source Clock:      clk rising
+
+  Data Path: L0/LCD_E to lcd_e
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.591   0.447  L0/LCD_E (L0/LCD_E)
+     OBUF:I->O                 3.272          lcd_e_OBUF (lcd_e)
+    ----------------------------------------
+    Total                      4.310ns (3.863ns logic, 0.447ns route)
+                                       (89.6% logic, 10.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 47.00 secs
+Total CPU time to Xst completion: 46.28 secs
+ 
+--> 
+
+
+Total memory usage is 636844 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :  162 (   0 filtered)
+
