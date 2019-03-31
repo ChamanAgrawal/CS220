@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "/home/chaman/git/CS220/Lab9/instruction_memory/memory.xst" -ofn "/home/chaman/git/CS220/Lab9/instruction_memory/memory.syr" 
+xst -intstyle ise -ifn "/home/chaman/git/CS220/Lab9/instruction_memory/memory.xst" -ofn "/home/chaman/git/CS220/Lab9/instruction_memory/memory.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 memory.ngc memory.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o memory_map.ncd memory.ngd memory.pcf 
+xst -intstyle ise -ifn "/home/chaman/git/CS220/Lab9/instruction_memory/memory.xst" -ofn "/home/chaman/git/CS220/Lab9/instruction_memory/memory.syr" 
+par -w -intstyle ise -ol high -t 1 memory_map.ncd memory.ncd memory.pcf 
