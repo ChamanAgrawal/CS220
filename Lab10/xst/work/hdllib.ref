@@ -1,0 +1,7 @@
+MO data_memory NULL data_memory.v vlg4A/data__memory.bin 1554702344
+MO instruction_memory NULL instruction_memory.v vlg62/instruction__memory.bin 1554702344
+MO register_file NULL register_file.v vlg7C/register__file.bin 1554702344
+MO state_control NULL state_control.v vlg7D/state__control.bin 1554702344
+MO execute NULL execute.v vlg67/execute.bin 1554702344
+MO instruction_memory_top NULL instruction_memory_top.v vlg14/instruction__memory__top.bin 1554702344
+MO decode NULL decode.v vlg50/decode.bin 1554702344

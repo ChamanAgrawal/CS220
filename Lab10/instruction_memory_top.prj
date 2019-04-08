@@ -1,0 +1,7 @@
+verilog work "state_control.v"
+verilog work "register_file.v"
+verilog work "instruction_memory.v"
+verilog work "execute.v"
+verilog work "decode.v"
+verilog work "data_memory.v"
+verilog work "instruction_memory_top.v"
